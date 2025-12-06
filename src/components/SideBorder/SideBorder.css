@@ -1,0 +1,46 @@
+.sideborder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  z-index: -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  .numbers {
+    font-size: 0.5em;
+    color: rgb(var(--color-red));
+    user-select: none;
+    letter-spacing: 0.1em;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    width: 20px;
+  }
+
+  .char-column {
+    height: 100%;
+    width: 4px;
+    pointer-events: none;
+
+    .char {
+      display: block;
+      width: 10px;
+      height: 8px;
+      line-height: 10px;
+      font-size: 6px;
+      color: rgb(var(--color-red));
+      user-select: none;
+      text-align: center;
+      opacity: 1;
+      letter-spacing: 0.01em;
+      transform-origin: center;
+    }
+  }
+}

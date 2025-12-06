@@ -1,0 +1,25 @@
+.decorative-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+
+
+  &.horizontal {
+    flex-direction: row;
+    height: 16px;
+    width: 100%;
+  }
+
+  &.vertical {
+    flex-direction: column;
+    height: 100%;
+    width: 16px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(var(--color-cyan));
+  }
+}

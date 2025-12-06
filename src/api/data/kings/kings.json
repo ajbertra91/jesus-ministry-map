@@ -1,0 +1,885 @@
+{
+  "kings": {
+    "kingdomOfIsrael": [
+      {
+        "name": "Jeroboam I",
+        "kingdom": "Israel",
+        "reignStart": "931",
+        "reignEnd": "910",
+        "dynasty": "Jeroboam",
+        "highPriests": [
+          "Unknown (no biblical high priests recorded for the northern kingdom)"
+        ],
+        "prophets": [
+          "Ahijah the Shilonite"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Established golden calves at Bethel and Dan",
+          "Instituted non-Levitical priesthood",
+          "Caused Israel to sin"
+        ],
+        "scriptures": ["1 Kings 11:26-40", "1 Kings 12-14"]
+      },
+      {
+        "name": "Nadab",
+        "kingdom": "Israel",
+        "reignStart": "910",
+        "reignEnd": "909",
+        "dynasty": "Jeroboam",
+        "highPriests": [
+          "Unknown (no biblical high priests recorded)"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Assassinated by Baasha"
+        ],
+        "scriptures": ["1 Kings 15:25-32"]
+      },
+      {
+        "name": "Baasha",
+        "kingdom": "Israel",
+        "reignStart": "909",
+        "reignEnd": "886",
+        "dynasty": "Baasha",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Jehu son of Hanani"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Destroyed house of Jeroboam",
+          "Condemned by prophet Jehu"
+        ],
+        "scriptures": ["1 Kings 15:27-16:7"]
+      },
+      {
+        "name": "Elah",
+        "kingdom": "Israel",
+        "reignStart": "886",
+        "reignEnd": "885",
+        "dynasty": "Baasha",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Assassinated by Zimri"
+        ],
+        "scriptures": ["1 Kings 16:8-14"]
+      },
+      {
+        "name": "Zimri",
+        "kingdom": "Israel",
+        "reignStart": "885",
+        "reignEnd": "885",
+        "dynasty": "Zimri",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Burned palace on himself",
+          "Shortest reign of any Israelite king"
+        ],
+        "scriptures": ["1 Kings 16:9-20"]
+      },
+      {
+        "name": "Omri",
+        "kingdom": "Israel",
+        "reignStart": "885",
+        "reignEnd": "874",
+        "dynasty": "Omri",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Built Samaria",
+          "Father of Ahab"
+        ],
+        "scriptures": ["1 Kings 16:16-28"]
+      },
+      {
+        "name": "Ahab",
+        "kingdom": "Israel",
+        "reignStart": "874",
+        "reignEnd": "853",
+        "dynasty": "Omri",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Elijah",
+          "Micaiah son of Imlah"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Married Jezebel",
+          "Built temple of Baal",
+          "Confronted by Elijah at Mount Carmel"
+        ],
+        "scriptures": ["1 Kings 16:29-22:40"]
+      },
+      {
+        "name": "Ahaziah",
+        "kingdom": "Israel",
+        "reignStart": "853",
+        "reignEnd": "852",
+        "dynasty": "Omri",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Elijah"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Inquired of Baal-zebub",
+          "Condemned by Elijah"
+        ],
+        "scriptures": ["1 Kings 22:51-2 Kings 1"]
+      },
+      {
+        "name": "Joram (Jehoram)",
+        "kingdom": "Israel",
+        "reignStart": "852",
+        "reignEnd": "841",
+        "dynasty": "Omri",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Elisha"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "War with Moab",
+          "Healed Naaman era"
+        ],
+        "scriptures": ["2 Kings 3-9"]
+      },
+      {
+        "name": "Jehu",
+        "kingdom": "Israel",
+        "reignStart": "841",
+        "reignEnd": "814",
+        "dynasty": "Jehu",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Elisha"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Executed Ahab’s house",
+          "Destroyed Baal worship",
+          "Commended but not fully godly"
+        ],
+        "scriptures": ["2 Kings 9-10"]
+      },
+      {
+        "name": "Jehoahaz",
+        "kingdom": "Israel",
+        "reignStart": "814",
+        "reignEnd": "798",
+        "dynasty": "Jehu",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown (Elisha alive but no direct interaction recorded)"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Oppressed by Syria"
+        ],
+        "scriptures": ["2 Kings 13:1-9"]
+      },
+      {
+        "name": "Jehoash (Joash of Israel)",
+        "kingdom": "Israel",
+        "reignStart": "798",
+        "reignEnd": "782",
+        "dynasty": "Jehu",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Elisha"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Visited dying prophet Elisha",
+          "Defeated Amaziah of Judah",
+          "Defeated Syria three times"
+        ],
+        "scriptures": ["2 Kings 13:10-25", "2 Kings 14:8-16"]
+      },
+      {
+        "name": "Jeroboam II",
+        "kingdom": "Israel",
+        "reignStart": "793",
+        "reignEnd": "753",
+        "dynasty": "Jehu",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Amos",
+          "Hosea"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Restored Israel’s borders"
+        ],
+        "scriptures": ["2 Kings 14:23-29"]
+      },
+      {
+        "name": "Zechariah",
+        "kingdom": "Israel",
+        "reignStart": "753",
+        "reignEnd": "752",
+        "dynasty": "Jehu",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown (Hosea era but no contact)"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Last of Jehu’s dynasty",
+          "Assassinated"
+        ],
+        "scriptures": ["2 Kings 15:8-12"]
+      },
+      {
+        "name": "Shallum",
+        "kingdom": "Israel",
+        "reignStart": "752",
+        "reignEnd": "752",
+        "dynasty": "Shallum",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Assassinated Zechariah",
+          "Killed by Menahem"
+        ],
+        "scriptures": ["2 Kings 15:10-15"]
+      },
+      {
+        "name": "Menahem",
+        "kingdom": "Israel",
+        "reignStart": "752",
+        "reignEnd": "742",
+        "dynasty": "Menahem",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Paid tribute to Assyria"
+        ],
+        "scriptures": ["2 Kings 15:14-22"]
+      },
+      {
+        "name": "Pekahiah",
+        "kingdom": "Israel",
+        "reignStart": "742",
+        "reignEnd": "740",
+        "dynasty": "Menahem",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Unknown"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Assassinated by Pekah"
+        ],
+        "scriptures": ["2 Kings 15:23-26"]
+      },
+      {
+        "name": "Pekah",
+        "kingdom": "Israel",
+        "reignStart": "740",
+        "reignEnd": "732",
+        "dynasty": "Pekah",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Hosea"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Syro-Ephraimite War"
+        ],
+        "scriptures": ["2 Kings 15:27-31"]
+      },
+      {
+        "name": "Hoshea",
+        "kingdom": "Israel",
+        "reignStart": "732",
+        "reignEnd": "722",
+        "dynasty": "Hoshea",
+        "highPriests": [
+          "Unknown"
+        ],
+        "prophets": [
+          "Hosea"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "Conquered by Assyria",
+          "Fall of Samaria",
+          "End of the northern kingdom"
+        ],
+        "scriptures": ["2 Kings 17"]
+      }
+    ],
+    "kingdomOfJudah": [
+      {
+        "name": "Saul",
+        "kingdom": "Unified Israel",
+        "reignStart": "1050",
+        "reignEnd": "1010",
+        "dynasty": "Saul",
+        "highPriests": [
+          "Ahimelech",
+          "Abiathar"
+        ],
+        "prophets": [
+          "Samuel"
+        ],
+        "godly": false,
+        "notableEvents": [
+          "First king of Israel",
+          "Persecuted David"
+        ],
+        "scriptures": ["1 Samuel 9-31"]
+      },
+      {
+        "name": "David",
+        "kingdom": "Unified Israel",
+        "reignStart": "1010",
+        "reignEnd": "970",
+        "dynasty": "David",
+        "highPriests": [
+          "Zadok",
+          "Abiathar"
+        ],
+        "prophets": [
+          "Nathan",
+          "Gad"
+        ],
+        "godly": true,
+        "notableEvents": [
+          "Captured Jerusalem",
+          "Davidic covenant"
+        ],
+        "scriptures": ["1 Samuel 16-1 Kings 2"]
+      },
+      {
+        "name": "Solomon",
+        "kingdom": "Unified Israel",
+        "reignStart": "970",
+        "reignEnd": "930",
+        "dynasty": "David",
+        "highPriests": [
+          "Zadok"
+        ],
+        "prophets": [
+          "Nathan",
+          "Ahijah the Shilonite"
+        ],
+        "godly": "mixed",
+        "notableEvents": [
+          "Built the temple",
+          "Great wisdom"
+        ],
+        "scriptures": ["1 Kings 1-11"]
+      },
+      {
+        "name": "Rehoboam",
+        "kingdom": "Judah",
+        "reignStart": "931",
+        "reignEnd": "913",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "First king of the southern kingdom of Judah (the tribes of Judah and Benjamin)",
+          "His harsh policies led to the division of the united monarchy"
+        ],
+        "scriptures": [
+          "1 Kings 12"
+        ],
+        "prophets": [
+          "Shemaiah the prophet"
+        ],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Abijah",
+        "kingdom": "Judah",
+        "reignStart": "913",
+        "reignEnd": "911",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Fought against the northern kingdom of Israel",
+          "Maintained the worship of Yahweh in Judah"
+        ],
+        "scriptures": [
+          "1 Kings 15:1-8"
+        ],
+        "prophets": [
+          "Iddo the prophet"
+        ],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Asa",
+        "kingdom": "Judah",
+        "reignStart": "911",
+        "reignEnd": "870",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Implemented religious reforms in Judah",
+          "Strengthened the kingdom through alliances and military campaigns"
+        ],
+        "scriptures": [
+          "1 Kings 15:9-24",
+          "2 Chronicles 14-16"
+        ],
+        "prophets": [
+          "Azariah son of Oded"
+        ],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Jehoshaphat",
+        "kingdom": "Judah",
+        "reignStart": "870",
+        "reignEnd": "848",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Formed alliances with the northern kingdom of Israel",
+          "Promoted religious education and judicial reforms"
+        ],
+        "scriptures": [
+          "1 Kings 15:24-22:50",
+          "2 Chronicles 17-20"
+        ],
+        "prophets": [
+          "Jehaziel"
+        ],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Jehoram",
+        "kingdom": "Judah",
+        "reignStart": "848",
+        "reignEnd": "841",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Married Athaliah, daughter of Ahab and Jezebel",
+          "Faced invasions from neighboring kingdoms",
+          "Experienced internal strife and rebellion"
+        ],
+        "scriptures": [
+          "2 Kings 8:16-24",
+          "2 Chronicles 21"
+        ],
+        "prophets": [
+          "Elijah"
+        ],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Ahaziah",
+        "kingdom": "Judah",
+        "reignStart": "841",
+        "reignEnd": "840",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Son of Jehoram and Athaliah",
+          "His reign was short due to assassination",
+          "Continued the policies of his parents"
+        ],
+        "scriptures": [
+          "2 Kings 8:25-29",
+          "2 Chronicles 22:1-9"
+        ],
+        "prophets": [
+          "Elijah"
+        ],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Athaliah",
+        "kingdom": "Judah",
+        "reignStart": "840",
+        "reignEnd": "835",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Only queen to rule Judah",
+          "Attempted to eliminate the Davidic line by killing royal heirs",
+          "Eventually overthrown in a coup"
+        ],
+        "scriptures": [
+          "2 Kings 11",
+          "2 Chronicles 22:10-23:15"
+        ],
+        "prophets": [],
+        "highPriests": [
+          "Zadok"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Joash",
+        "kingdom": "Judah",
+        "reignStart": "835",
+        "reignEnd": "796",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Restored the temple in Jerusalem",
+          "Implemented religious reforms under the guidance of the high priest Jehoiada",
+          "Faced internal strife and external threats"
+        ],
+        "scriptures": [
+          "2 Kings 11:1-12:21",
+          "2 Chronicles 23-24"
+        ],
+        "prophets": [
+          "Zechariah son of Jehoiada"
+        ],
+        "highPriests": [
+          "Jehoiada"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Amaziah",
+        "kingdom": "Judah",
+        "reignStart": "796",
+        "reignEnd": "767",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Conducted military campaigns against Edom",
+          "Strengthened the kingdom's defenses",
+          "Faced a revolt that led to his assassination"
+        ],
+        "scriptures": [
+          "2 Kings 14:1-20",
+          "2 Chronicles 25"
+        ],
+        "prophets": [],
+        "highPriests": [
+          "Jehoiada"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Uzziah",
+        "kingdom": "Judah",
+        "reignStart": "767",
+        "reignEnd": "740",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Expanded the kingdom's territory",
+          "Strengthened the military and economy",
+          "Became a leper later in life, leading to his son Jotham ruling as co-regent"
+        ],
+        "scriptures": [
+          "2 Kings 14:21-22", "15:1-7",
+          "2 Chronicles 26"
+        ],
+        "prophets": [
+          "Isaiah"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Jotham",
+        "kingdom": "Judah",
+        "reignStart": "740",
+        "reignEnd": "732",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Built fortifications in Jerusalem and other cities",
+          "Maintained peace and stability in the kingdom",
+          "Faced pressure from the rising Assyrian empire"
+        ],
+        "scriptures": [
+          "2 Kings 15:32-38",
+          "2 Chronicles 27"
+        ],
+        "prophets": [
+          "Isaiah"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Ahaz",
+        "kingdom": "Judah",
+        "reignStart": "732",
+        "reignEnd": "715",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Faced invasions from Israel and Aram",
+          "Introduced Assyrian religious practices into Judah",
+          "Paid tribute to Assyria to avoid further conflict"
+        ],
+        "scriptures": [
+          "2 Kings 16",
+          "2 Chronicles 28"
+        ],
+        "prophets": [
+          "Isaiah",
+          "Micah"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Hezekiah",
+        "kingdom": "Judah",
+        "reignStart": "715",
+        "reignEnd": "686",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Implemented significant religious reforms",
+          "Resisted the Assyrian siege of Jerusalem",
+          "Restored the temple and centralized worship in Jerusalem"
+        ],
+        "scriptures": [
+          "2 Kings 18-20",
+          "2 Chronicles 29-32",
+          "Isaiah 36-39"
+        ],
+        "prophets": [
+          "Isaiah"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Manasseh",
+        "kingdom": "Judah",
+        "reignStart": "686",
+        "reignEnd": "642",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Longest-reigning king of Judah",
+          "Reversed many of Hezekiah's religious reforms",
+          "Engaged in idolatry and pagan practices",
+          "Later repented and attempted to restore proper worship"
+        ],
+        "scriptures": [
+          "2 Kings 21",
+          "2 Chronicles 33"
+        ],
+        "prophets": [
+          "Nahum"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Amon",
+        "kingdom": "Judah",
+        "reignStart": "642",
+        "reignEnd": "640",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Continued the idolatrous practices of his father Manasseh",
+          "Assassinated by his own servants after a short reign"
+        ],
+        "scriptures": [
+          "2 Kings 21:19-26",
+          "2 Chronicles 33:21-25"
+        ],
+        "prophets": [
+          "Nahum"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Josiah",
+        "kingdom": "Judah",
+        "reignStart": "640",
+        "reignEnd": "609",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Discovered the Book of the Law during temple renovations",
+          "Implemented major religious reforms based on the Book of the Law",
+          "Attempted to resist Egyptian influence and control"
+        ],
+        "scriptures": [
+          "2 Kings 22-23",
+          "2 Chronicles 34-35"
+        ],
+        "prophets": [
+          "Huldah"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": true
+      },
+      {
+        "name": "Jehoahaz",
+        "kingdom": "Judah",
+        "reignStart": "609",
+        "reignEnd": "609",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Son of Josiah",
+          "Reigned for only three months before being deposed by the Egyptian Pharaoh Necho II"
+        ],
+        "scriptures": [
+          "2 Kings 23:30-34",
+          "2 Chronicles 36:1-4"
+        ],
+        "prophets": [],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Jehoiakim",
+        "kingdom": "Judah",
+        "reignStart": "609",
+        "reignEnd": "598",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Placed on the throne by Pharaoh Necho II",
+          "Rebelled against Babylonian rule, leading to the first siege of Jerusalem",
+          "Known for his oppressive policies and disregard for prophetic warnings"
+        ],
+        "scriptures": [
+          "2 Kings 23:34-24:7",
+          "2 Chronicles 36:4-8",
+          "Jeremiah 36"
+        ],
+        "prophets": [
+          "Jeremiah",
+          "Ezekiel"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Jehoiachin",
+        "kingdom": "Judah",
+        "reignStart": "598",
+        "reignEnd": "597",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Reigned for only three months before being taken captive to Babylon",
+          "Receives blood curse from God for his actions",
+          "Known for his humility and repentance during captivity"
+        ],
+        "scriptures": [
+          "2 Kings 24:8-17",
+          "2 Chronicles 36:9-10",
+          "Jeremiah 52:31-34"
+        ],
+        "prophets": [
+          "Jeremiah",
+          "Ezekiel"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      },
+      {
+        "name": "Zedekiah",
+        "kingdom": "Judah",
+        "reignStart": "597",
+        "reignEnd": "586",
+        "dynasty": "House of David",
+        "notableEvents": [
+          "Last king of Judah before the Babylonian exile",
+          "Rebelled against Babylonian rule, leading to the destruction of Jerusalem and the temple",
+          "Witnessed the fall of Jerusalem and the exile of his people"
+        ],
+        "scriptures": [
+          "2 Kings 24:18-25:7",
+          "2 Chronicles 36:11-21",
+          "Jeremiah 37-39"
+        ],
+        "prophets": [
+          "Jeremiah",
+          "Ezekiel"
+        ],
+        "highPriests": [
+          "Jotham son of Azariah"
+        ],
+        "godly": false
+      }
+    ]
+  }
+}

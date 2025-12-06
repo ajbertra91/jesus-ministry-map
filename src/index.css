@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* <weight>: Use a value from 400 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.orbitron-regular {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.orbitron-bold {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.rajdhani-light {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.rajdhani-regular {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rajdhani-medium {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.rajdhani-semibold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.rajdhani-bold {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  font-family: system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-red: 247, 80, 73;
+  --color-cyan: 94, 246, 255;
+  --color-white: 255, 255, 255;
+  --color-darkest-blue: 14, 14, 23;
+  --color-gray: 214, 208, 208;
+  --color-green: 29,237, 131;
+  --color-blue: 37, 112, 212;
+  --color-purple: 157, 43, 245;
+  --color-orange: 251, 147, 46;
+  --color-yellow: 241, 181, 55;
+
+  --edge-size: 0.5em;
+}
+
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(
+    circle at 55% -50%,
+    rgba(var(--color-red), 0.3),
+    rgba(var(--color-red), 0.3) 50%,
+    rgba(var(--color-darkest-blue), 1) 60%,
+    rgba(var(--color-darkest-blue), 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.rotated-text {
+  transform: rotate(270deg);
+}
+
+.text-red {
+  color: rgb(var(--color-red));
+}
+
+/* text color helpers for CSS variables defined in :root */
+.text-cyan {
+  color: rgb(var(--color-cyan));
+}
+
+.text-white {
+  color: rgb(var(--color-white));
+}
+
+.text-darkest-blue {
+  color: rgb(var(--color-darkest-blue));
+}
+
+.text-gray {
+  color: rgb(var(--color-gray));
+}
+
+.text-green {
+  color: rgb(var(--color-green));
+}
+
+.text-blue {
+  color: rgb(var(--color-blue));
+}
+
+.text-purple {
+  color: rgb(var(--color-purple));
+}
+
+.text-orange {
+  color: rgb(var(--color-orange));
+}
+
+.text-yellow {
+  color: rgb(var(--color-yellow));
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

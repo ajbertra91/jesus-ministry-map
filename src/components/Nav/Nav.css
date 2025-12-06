@@ -1,0 +1,37 @@
+.nav {
+  height: 60px;
+  width: calc(100% - 35px);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid rgb(var(--color-cyan));
+  background-color: rgba(var(--color-darkest-blue), 0.5);
+  position: relative;
+  z-index: 1000;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: rgba(var(--color-blue), 0.5);
+  }
+
+  .link {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid rgb(var(--color-cyan));
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgba(var(--color-blue), 0.5);
+    }
+
+    &:active {
+      font-weight: bold;
+    }
+  }
+}
