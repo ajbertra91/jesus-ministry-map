@@ -13,17 +13,11 @@ declare module '@tanstack/react-router' {
 }
 
 async function enableMocking() {
-  let baseUrl = '';
-  if (process.env.NODE_ENV !== 'development') {
-    baseUrl = 'jesus-ministry-map';
-  }
+  // if (process.env.NODE_ENV !== 'development') {
+  // }
 
   const { worker } = await import('./api/mocks/browser');
-  return worker.start({
-    serviceWorker: {
-      url: baseUrl ? `${baseUrl}/mockServiceWorker.js` : 'mockServiceWorker.js',
-    },
-  })
+  return worker.start()
 }
 
 enableMocking().then(() => {
