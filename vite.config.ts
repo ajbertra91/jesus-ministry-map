@@ -8,7 +8,7 @@ export default ({ mode }: ConfigEnv) => {
   const port = env.PORT ? Number(env.PORT) : undefined
 
   return defineConfig({
-    base: '/',
+    base: './',
     plugins: [
       react(),
       tanstackRouterVite({
