@@ -1,11 +1,10 @@
 # Jesus Ministry Map
 
-<img alt="License" src="https://img.shields.io/github/license/ajbertra91/jesus-ministry-map">
-<img alt="Top language" src="https://img.shields.io/github/languages/top/ajbertra91/jesus-ministry-map">
-<img alt="Last commit" src="https://img.shields.io/github/last-commit/ajbertra91/jesus-ministry-map">
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-yes-blue?logo=typescript">
-
+![License](https://img.shields.io/github/license/ajbertra91/jesus-ministry-map)
+![TypeScript](https://img.shields.io/badge/TypeScript-yes-blue?logo=typescript)
+![JSON](https://img.shields.io/badge/JSON-yes-orange?logo=JSON)
 ![Built with Vite](https://img.shields.io/badge/built%20with-Vite-646cff)
+![Last commit](https://img.shields.io/github/last-commit/ajbertra91/jesus-ministry-map)
 
 ## About
 
