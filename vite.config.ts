@@ -8,7 +8,7 @@ export default ({ mode }: ConfigEnv) => {
   const port = env.PORT ? Number(env.PORT) : undefined
 
   return defineConfig({
-    base: '/jesus-ministry-map/',
+    base: '/',
     plugins: [
       react(),
       tanstackRouterVite({
