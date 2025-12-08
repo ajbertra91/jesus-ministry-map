@@ -1,18 +1,72 @@
 .kings-page {
   padding-left: 50px;
+  width: calc(100% - 50px);
+  padding-bottom: 50px;
 
   .kings-columns-container {
     display: flex;
     gap: 50px;
-  };
+  }
+
+  .kings-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "unified unified unified"
+      "judah timeline israel";
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .kings-unified {
+    grid-area: unified;
+  }
+
+  .kings-judah {
+    grid-area: judah;
+  }
+
+  .kings-israel {
+    grid-area: israel;
+  }
 
   ul {
     list-style-type: none;
     padding: 0;
-    margin:  0;
-  };
+    margin: 0;
+  }
 
-  li + li {
+  li+li {
     margin-top: 4px;
+  }
+
+  .timeline {
+    grid-area: timeline;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 250px;
+    padding-bottom: 130px;
+
+    .label-800,
+    .label-700 {
+      padding-top: 80px;
+    }
+  }
+}
+
+@keyframes fade-out-in {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

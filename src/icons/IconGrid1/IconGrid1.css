@@ -1,0 +1,20 @@
+.icon-grid1 {
+
+  #outer-border,
+  #circle-1,
+  #circle-2,
+  #circle-3,
+  #circle-4,
+  #circle-5,
+  #circle-6,
+  #text {
+    path {
+      fill: rgb(94, 246, 255);
+    }
+  }
+
+  #circle-1-fill,
+  #circle-4-fill {
+    fill: rgb(94, 246, 255);
+  }
+}

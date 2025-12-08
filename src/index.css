@@ -66,7 +66,7 @@
   --color-white: 255, 255, 255;
   --color-darkest-blue: 14, 14, 23;
   --color-gray: 214, 208, 208;
-  --color-green: 29,237, 131;
+  --color-green: 29, 237, 131;
   --color-blue: 37, 112, 212;
   --color-purple: 157, 43, 245;
   --color-orange: 251, 147, 46;
@@ -80,6 +80,7 @@ body,
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: #000;
   background-repeat: no-repeat;
@@ -90,13 +91,11 @@ body {
 #root {
   margin: 0;
   padding: 0;
-  background-image: radial-gradient(
-    circle at 55% -50%,
-    rgba(var(--color-red), 0.3),
-    rgba(var(--color-red), 0.3) 50%,
-    rgba(var(--color-darkest-blue), 1) 60%,
-    rgba(var(--color-darkest-blue), 1) 100%
-  );
+  background-image: radial-gradient(circle at 55% -50%,
+      rgba(var(--color-red), 0.3),
+      rgba(var(--color-red), 0.3) 50%,
+      rgba(var(--color-darkest-blue), 1) 60%,
+      rgba(var(--color-darkest-blue), 1) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -106,6 +105,74 @@ body {
   width: 100%;
   height: 100%;
   overflow: scroll;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+.gap-3 {
+  gap: 3px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+
+.gap-7 {
+  gap: 7px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-9 {
+  gap: 9px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 .rotated-text {

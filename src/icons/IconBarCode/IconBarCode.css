@@ -1,0 +1,5 @@
+.icon-bar-code {
+  path#barcode {
+    fill: rga(var(--color-red));
+  }
+}

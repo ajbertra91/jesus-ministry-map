@@ -1,0 +1,49 @@
+.info-section {
+  margin: 0 0 3rem 0;
+
+  .info-section-label {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .info-section-divider {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(var(--color-red));
+  }
+
+  .info-section-visual-detail {
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 0.65rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+}

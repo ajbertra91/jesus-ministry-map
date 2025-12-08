@@ -862,14 +862,18 @@
         "reignEnd": "586",
         "dynasty": "House of David",
         "notableEvents": [
-          "Last king of Judah before the Babylonian exile",
-          "Rebelled against Babylonian rule, leading to the destruction of Jerusalem and the temple",
-          "Witnessed the fall of Jerusalem and the exile of his people"
+          "Last king of Judah before the Babylonian exile.",
+          "Rebelled against Babylonian rule, leading to the destruction of Jerusalem and the temple.",
+          "Jeremiah prophesied he would die in Babylon.",
+          "Ezekiel prophesied he would not see Babylon.",
+          "Nebuchadnezzar II captured him, killed his sons before his eyes, blinded him, and took him to Babylon."
         ],
         "scriptures": [
           "2 Kings 24:18-25:7",
           "2 Chronicles 36:11-21",
-          "Jeremiah 37-39"
+          "Jeremiah 34:3-4",
+          "Jeremiah 37-39",
+          "Ezekiel 12:13"
         ],
         "prophets": [
           "Jeremiah",

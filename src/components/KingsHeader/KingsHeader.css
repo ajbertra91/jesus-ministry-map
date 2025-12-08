@@ -1,0 +1,45 @@
+.kings-header {
+  border-bottom: 2px solid rgb(var(--color-red));
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+  padding: 5px 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: calc(100%-35px);
+
+  .kings-header-section {
+    flex: 1 0 50%;
+  }
+
+  .icon-grid1 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-protocol {
+    width: 40px;
+    height: 40px;
+  }
+
+  .small-text {
+    font-size: 0.2rem;
+  }
+
+  .small-text-container {
+    &.protocol {
+      .small-text {
+        font-size: 0.4rem;
+      }
+    }
+  }
+
+  .title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+
+}
