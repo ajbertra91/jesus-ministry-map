@@ -9,6 +9,7 @@ import './Kings.css';
 import InfoSection from "../InfoSection";
 import { FaCrown } from "react-icons/fa";
 import { FaBookBible } from "react-icons/fa6";
+import BarCode from "../BarCode";
 
 
 const Kings = () => {
@@ -90,13 +91,13 @@ const Kings = () => {
       <Modal open={openModal} onClose={() => setOpenModal(false)}>
         <div className="king-modal-info">
           <InfoSection label="Name" detail="resources v.2361.188">
-            <h3 className="orbitron-bold text-cyan">
-              {kingToDisplay?.name}
+            <h3 className="orbitron-bold text-cyan flex align-center gap-6">
+              <span>{kingToDisplay?.name}</span>
               {kingToDisplay?.godly && <span className="king-button__holy-icon" title="Was a Godly king"><GiHolyGrail /></span>}
             </h3>
           </InfoSection>
           <InfoSection label="Details" detail="dtl_dlcas_8D0095">
-            <p className="text-cyan"><FaCrown /> King of {kingToDisplay?.kingdom || 'kingdom'}</p>
+            <p className="text-cyan flex align-center gap-6"><FaCrown /> King of {kingToDisplay?.kingdom || 'kingdom'}</p>
             <p className="text-cyan">Reign: {kingToDisplay?.reignStart} to {kingToDisplay?.reignEnd}</p>
             <p className="text-cyan">Dynasty: {kingToDisplay?.dynasty || 'N/A'}</p>
           </InfoSection>
@@ -110,7 +111,7 @@ const Kings = () => {
           <InfoSection label="Scriptures" detail="scripture kjv 1611.20">
             <ul>
               {kingToDisplay?.scriptures?.map((event, index) => (
-                <li key={index} className="text-cyan"><FaBookBible /> {event}</li>
+                <li key={index} className="text-cyan flex align-center gap-6"><FaBookBible /> {event}</li>
               ))}
             </ul>
           </InfoSection>
@@ -120,6 +121,11 @@ const Kings = () => {
                 <li key={index} className="text-cyan">{event}</li>
               ))}
             </ul>
+          </InfoSection>
+          <InfoSection label="Biological Aspectation" detail="">
+            <div className="bar-code width-50-pc mt-4 h-60">
+              <BarCode/>
+            </div>
           </InfoSection>
         </div>
       </Modal>

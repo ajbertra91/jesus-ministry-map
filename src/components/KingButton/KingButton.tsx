@@ -1,6 +1,7 @@
 import { type King } from '../../types/King';
 import { GiHolyGrail } from "react-icons/gi";
 import './KingButton.css';
+import CircuitBoard from '../Graphics/CircuitBoard/CircuitBoard';
 
 interface KingButtonProps {
   king: King;
@@ -11,7 +12,6 @@ interface KingButtonProps {
 
 const KingButton = ({ king, onClick, style, split = false }: KingButtonProps) => {
   if (!king) return null;
-  console.log(style)
 
   return (
     <button
@@ -20,11 +20,13 @@ const KingButton = ({ king, onClick, style, split = false }: KingButtonProps) =>
       style={style}
       title={`Was ${king.godly ? '' : 'not'} a Godly King`}
     >
-      {king.godly && <span className="king-button__holy-icon"><GiHolyGrail /></span>}
-      <span className={`king-button__text ${split ? 'king-button__text--split' : ''}`}>
-        <div className="name">{king.name}</div>
-        <div className="reign">{king.reignStart} - {king.reignEnd}</div>
-      </span>
+      <CircuitBoard>
+        {king.godly && <span className="king-button__holy-icon"><GiHolyGrail /></span>}
+        <span className={`king-button__text ${split ? 'king-button__text--split' : ''}`}>
+          <div className="name">{king.name}</div>
+          <div className="reign">{king.reignStart} - {king.reignEnd}</div>
+        </span>
+      </CircuitBoard>
     </button>
   );
 };

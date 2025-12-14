@@ -164,8 +164,8 @@
   "Caesarea-Philippi": {
     "id": "caesarea-philippi",
     "title": "Caesarea-Philippi",
-    "description": "",
-    "population": null,
+    "description": "In the 1st century, Caesarea Philippi (modern Banias) was a significant pagan religious center at the foot of Mt. Hermon, known for its shrines to the Greek god Pan, where Jesus took his disciples for Peter's famous confession. Originally called Panias, it featured a cave/grotto considered the \"Gates of Hades\" (Underworld) and was expanded by Herod the Great and his son Philip, who built temples and renamed it Caesarea Philippi. This pagan-dominated locale provided a stark contrast to Jesus's divine identity, as confirmed by archaeological finds like niches for idols of Pan, Echo, and Hermes.",
+    "population": "Likely holding thousands, maybe tens of thousands",
     "founded": "",
     "scriptureReferences": {
       "oldTestament": {},
@@ -178,15 +178,19 @@
           "8:27-38"
         ]
       },
-      "prophecies": {}
+      "prophecies": {
+        "commentary": [
+          "Jesus came here to make a point. Idolatry was the most condemned sin in the Bible. And yet nowhere was idolatry more prevalent than in Caesarea Philippi, a city of Greek-Roman culture known for its worship of foreign gods. Against this backdrop Jesus announced that He would establish a Church, and that the gates of hell will not prevail against it."
+        ]
+      }
     }
   },
   "Tyre": {
     "id": "tyre",
     "title": "Tyre",
-    "description": "",
-    "population": null,
-    "founded": "",
+    "description": "By the 1st century CE, Tyre was a significant city within the Roman Empire, a thriving port built on an island connected to the mainland by a causeway created by Alexander the Great; an ancient, world-renowned city already having millennia of history as a Phoenician stronghold.",
+    "population": "around 30,000",
+    "founded": "~2750 BC",
     "scriptureReferences": {
       "oldTestament": {},
       "newTestament": {},

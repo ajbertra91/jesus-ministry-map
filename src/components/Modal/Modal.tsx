@@ -1,8 +1,6 @@
 import { useEffect, type ReactNode } from "react";
-import './Modal.css'
 import LetterGlitch from "../LetterGlitch";
-import BarCode from "../BarCode";
-// import IconBarCode from "../../icons/IconBarCode";
+import './Modal.css'
 
 type Props = {
   open: boolean;
@@ -37,9 +35,6 @@ const Modal = ({ open, onClose, children }: Props) => {
           />
           <div className="modal-content">
             {children}
-          </div>
-          <div className="modal-footer">
-            <BarCode />
           </div>
         </div>
       </div>

@@ -88,23 +88,20 @@ body {
   background-size: cover;
 }
 
-#root {
-  margin: 0;
-  padding: 0;
-  background-image: radial-gradient(circle at 55% -50%,
-      rgba(var(--color-red), 0.3),
-      rgba(var(--color-red), 0.3) 50%,
-      rgba(var(--color-darkest-blue), 1) 60%,
-      rgba(var(--color-darkest-blue), 1) 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
+.width-50-pc {
+  width: 50%;
+}
+
+.mt-2 {
+  margin-top: 2px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.h-60 {
+  height: 60px;
 }
 
 .flex {

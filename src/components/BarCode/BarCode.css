@@ -3,8 +3,12 @@
   height: 100%;
 
   .bar-code__canvas {
-    width: 100%;
+    width: 380px;
     height: 100%;
     display: block;
+  }
+
+  .bar-code-numbers {
+    font-size: 0.825rem;
   }
 }

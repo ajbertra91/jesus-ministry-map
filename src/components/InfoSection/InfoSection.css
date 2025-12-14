@@ -4,6 +4,7 @@
   .info-section-label {
     margin: 0;
     font-size: 1rem;
+    color: rgb(var(--color-red));
   }
 
   .info-section-divider {
@@ -17,6 +18,7 @@
     text-transform: uppercase;
     margin: 0;
     font-size: 0.65rem;
+    color: rgb(var(--color-red));
   }
 
   h1,

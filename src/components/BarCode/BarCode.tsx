@@ -71,6 +71,7 @@ const BarCode = ({
   return (
     <div className={`bar-code-container ${className}`}>
       <canvas ref={canvasRef} className="bar-code__canvas" />
+      <p className="bar-code-numbers rajdhani-regular text-red">5415210 1056845 51 850541000 540454 485151 590787090001 20JG8W4</p>
     </div>
   );
 };

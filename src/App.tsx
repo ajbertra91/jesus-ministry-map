@@ -7,11 +7,31 @@ function App({ children }: { children: React.ReactNode }) {
   const routerState = useRouterState();
   const currentPathname = routerState.location.pathname;
   const homePath = '/';
+  const classes = () => {
+    let classes = '';
+    switch (currentPathname) {
+      case '/':
+        classes += '';
+        break;
+      case '/map':
+        classes += ' red-bg';
+        break;
+      case '/kings':
+        classes += ' red-bg';
+        break;
+      default:
+        break;
+    }
+    return classes;
+  };
+
   return (
-    <div className="app">
-      {currentPathname !== homePath ? <Nav /> : null}
-      <SideBorder />
-      {children}
+    <div className={`app-bg ${classes()}`}>
+      <div className="app">
+        {currentPathname !== homePath ? <Nav /> : null}
+        <SideBorder />
+        {children}
+      </div>
     </div>
   )
 }

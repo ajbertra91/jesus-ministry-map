@@ -3,6 +3,8 @@ import { MdDoubleArrow } from "react-icons/md";
 import { GiAbstract030 } from "react-icons/gi";
 import { Link } from "@tanstack/react-router";
 import './LargeBrightBar.css';
+import DecorativeArrows from "../DecorativeArrows/DecorativeArrows";
+import BarPatternCanvas from "../../icons/BarPatternCanvas";
 
 const LargeBrightBar = ({}) => {
   return (
@@ -46,6 +48,9 @@ const LargeBrightBar = ({}) => {
           <SiAndela />
         </span>
       </div>
+      <BarPatternCanvas>
+        <DecorativeArrows />
+      </BarPatternCanvas>
     </div>
   );
 };
