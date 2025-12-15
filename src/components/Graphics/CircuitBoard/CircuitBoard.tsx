@@ -5,21 +5,6 @@ interface CircuitBoardProps {
   children?: React.ReactNode;
 }
 
-// ---------- Utilities ----------
-// let seed = 12345;
-// function rand(max: number) {
-//   seed = (seed * 16807) % 2147483647;
-//   return (seed / 2147483647) * max;
-// }
-
-function rand(max: number) {
-  return Math.random() * max;
-}
-
-function clamp(v: number, min: number, max: number) {
-  return Math.max(min, Math.min(max, v));
-}
-
 const CircuitBoard = ({ children }: CircuitBoardProps) => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const roRef = useRef<ResizeObserver | null>(null);
