@@ -6,7 +6,7 @@ import './App.css'
 function App({ children }: { children: React.ReactNode }) {
   const routerState = useRouterState();
   const currentPathname = routerState.location.pathname;
-  const homePath = '/';
+  const homePath = import.meta.env.BASE_URL + '';
   const classes = () => {
     let classes = '';
     switch (currentPathname) {
