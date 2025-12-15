@@ -1,0 +1,13 @@
+.icon-star-circle {
+  height: 32px;
+  width: 32px;
+
+  path,
+  ellipse {
+    fill: rgb(var(--color-cyan));
+  }
+
+  #star-burst {
+    opacity: 0.25;
+  }
+}

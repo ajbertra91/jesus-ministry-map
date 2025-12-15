@@ -11,7 +11,7 @@ function App({ children }: { children: React.ReactNode }) {
     let classes = '';
     switch (currentPathname) {
       case '/':
-        classes += '';
+        classes += ' blue-bg';
         break;
       case '/map':
         classes += ' red-bg';

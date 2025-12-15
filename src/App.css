@@ -21,11 +21,7 @@
   }
 
   &.blue-bg {
-    background-image: radial-gradient(circle at 55% -50%,
-        rgba(var(--color-cyan), 0.05),
-        rgba(var(--color-cyan), 0.05) 50%,
-        rgba(var(--color-darkest-blue), 1) 60%,
-        rgba(var(--color-darkest-blue), 1) 100%);
+    background-image: linear-gradient(45deg, rgb(20 53 55), rgb(34 86 89));
   }
 }
 

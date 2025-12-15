@@ -3,6 +3,7 @@ import Modal from '../Modal';
 import mapSvg from '/Map-of-1st-Century-Iudaea2.svg?raw';
 import './Map.css';
 import CityInfo from '../CityInfo';
+import RevealPanelCanvas from '../RevealPanelCanvas';
 // import GridDistortion from '../GridDistortion';
 
 type SelectedPoint = {
@@ -44,18 +45,12 @@ const Map = () => {
 
   return (
     <div className="map-container content" ref={containerRef}>
-      <div
-        className="map-svg"
-        dangerouslySetInnerHTML={{ __html: mapSvg }}
-      />
-      {/* <GridDistortion
-        imageSrc={mapSvg}
-        grid={10}
-        mouse={0.1}
-        strength={0.15}
-        relaxation={0.9}
-        className="custom-class"
-      /> */}
+      <RevealPanelCanvas>
+        <div
+          className="map-svg"
+          dangerouslySetInnerHTML={{ __html: mapSvg }}
+        />
+      </RevealPanelCanvas>
 
       <Modal open={!!selectedItem} onClose={() => setSelectedItem(null)}>
         <CityInfo city={selectedItem?.title} />

@@ -122,6 +122,13 @@ const Kings = () => {
               ))}
             </ul>
           </InfoSection>
+          <InfoSection label="Hight Priests" detail="prst p.tkl852700.1.09">
+            <ul>
+              {kingToDisplay?.highPriests?.map((event, index) => (
+                <li key={index} className="text-cyan">{event}</li>
+              ))}
+            </ul>
+          </InfoSection>
           <InfoSection label="Biological Aspectation" detail="">
             <div className="bar-code width-50-pc mt-4 h-60">
               <BarCode/>

@@ -1,0 +1,34 @@
+.icon-arrows {
+  display: flex;
+  gap: 0.5rem;
+
+  [class|="arrow"] {
+    width: 2rem;
+    height: 4rem;
+  }
+
+  .arrow-3 {
+
+    path {
+      fill: rgb(208 252 255);
+    }
+  }
+
+  .arrow-1 {
+    path {
+      fill: rgba(var(--color-cyan), 0.3);
+    }
+  }
+
+  path {
+    fill: rgb(var(--color-cyan));
+  }
+
+  &.right {
+    direction: rtl;
+
+    [class|="arrow"] {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.decorative-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  .decorative-arrows-stars {
+    display: flex;
+    gap: 4rem;
+  }
+}
