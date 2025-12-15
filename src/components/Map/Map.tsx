@@ -4,7 +4,6 @@ import mapSvg from '/Map-of-1st-Century-Iudaea2.svg?raw';
 import './Map.css';
 import CityInfo from '../CityInfo';
 import RevealPanelCanvas from '../RevealPanelCanvas';
-// import GridDistortion from '../GridDistortion';
 
 type SelectedPoint = {
   id: string;
