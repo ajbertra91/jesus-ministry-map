@@ -10,13 +10,13 @@ function App({ children }: { children: React.ReactNode }) {
   const classes = () => {
     let classes = '';
     switch (currentPathname) {
-      case import.meta.env.BASE_URL:
+      case '/':
         classes += ' blue-bg';
         break;
-      case import.meta.env.BASE_URL + '/map':
+      case '/map':
         classes += ' red-bg';
         break;
-      case import.meta.env.BASE_URL + '/kings':
+      case '/kings':
         classes += ' red-bg';
         break;
       default:
