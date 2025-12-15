@@ -1,4 +1,4 @@
-import{j as l,r as u}from"./index-Y6jIldSy.js";import{c as L,s as N,u as T,I as v,M as E}from"./InfoSection-BVCvjyrZ.js";const G=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+import{j as l,r as u}from"./index-D0f_dfk0.js";import{c as L,s as N,u as T,I as v,M as E}from"./InfoSection-BSVEda9u.js";const G=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 2088 2863" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g id="Map-of-1st-Century-Iudaea" serif:id="Map of 1st Century Iudaea">
