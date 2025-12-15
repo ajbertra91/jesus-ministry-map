@@ -6,7 +6,7 @@ import './index.css';
 
 const router = createRouter({
   routeTree,
-  basepath: import.meta.env.BASE_URL,
+  basepath: '/jesus-ministry-map',
 });
 
 declare module '@tanstack/react-router' {
