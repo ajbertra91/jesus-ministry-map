@@ -1,9 +1,11 @@
 // API paths used by the client. MSW handlers expect the "/api/*" prefix,
 // so expose the same routes here.
-const KINGS = '/api/kings';
 const CITIES = '/api/cities';
+const DANIEL11 = '/api/daniel11';
+const KINGS = '/api/kings';
 
 export const serviceRegistry = {
-  KINGS,
   CITIES,
+  DANIEL11,
+  KINGS,
 };

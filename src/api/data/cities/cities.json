@@ -192,32 +192,116 @@
     "population": "around 30,000",
     "founded": "~2750 BC",
     "scriptureReferences": {
-      "oldTestament": {},
-      "newTestament": {},
-      "prophecies": {}
+      "oldTestament": {
+        "Joshua": [
+          "19:29"
+        ],
+        "2 Samuel": [
+          "5:11"
+        ],
+        "1 Kings": [
+          "5:1-12",
+          "7:13-14",
+          "9:10-14",
+          "10:22",
+          "16:31"
+        ],
+        "2 Kings": [
+          "23:13"
+        ],
+        "1 Chronicles": [
+          "14:1"
+        ],
+        "2 Chronicles": [
+          "2:3-16",
+          "9:21"
+        ],
+        "Ezra": [
+          "3:7"
+        ],
+        "Nehemiah": [
+          "13:16"
+        ],
+        "Psalm": [
+          "45:12",
+          "83:7",
+          "87:4"
+        ]
+      },
+      "newTestament": {
+        "Matthew": [
+          "11:21-22",
+          "15:21"
+        ],
+        "Mark": [
+          "3:8",
+          "7:24"
+        ],
+        "Luke": [
+          "6:17",
+          "10:13-14"
+        ],
+        "Acts": [
+          "12:20",
+          "21:3-7"
+        ]
+      },
+      "prophecies": {
+        "Isaiah": [
+          "23:1-18"
+        ],
+        "Jeremiah": [
+          "25: 22",
+          "27:3",
+          "47:4"
+        ],
+        "Ezekiel": [
+          "26:1-21",
+          "27:1-36",
+          "28:1-24"
+        ],
+        "Joel": [
+          "3:4"
+        ],
+        "Amos": [
+          "1:9-10"
+        ],
+        "Zechariah": [
+          "9:2-4"
+        ]
+      }
     }
   },
-  "Prolemais": {
-    "id": "prolemais",
-    "title": "Prolemais",
-    "description": "",
+  "Ptolemais": {
+    "id": "ptolemais",
+    "title": "Ptolemais (Accho)",
+    "description": "Ptolemais was an ancient Phoenician port, renamed under Greek rule, thriving under Rome, and significant enough in the 1st century to host an early Christian community encountered by Paul.",
     "population": null,
     "founded": "",
     "scriptureReferences": {
-      "oldTestament": {},
-      "newTestament": {},
+      "oldTestament": {
+        "Judges": ["1:31"]
+      },
+      "newTestament": {
+        "Acts": ["21:7"]
+      },
       "prophecies": {}
     }
   },
   "Bethsaida": {
     "id": "bethsaida",
     "title": "Bethsaida",
-    "description": "",
+    "description": "Bethsaida means \"house of fishing\"",
     "population": null,
     "founded": "",
     "scriptureReferences": {
       "oldTestament": {},
-      "newTestament": {},
+      "newTestament": {
+        "Matthew": ["11:21"],
+        "Mark": ["6:45-52", "8:22-26"],
+        "Luke": ["9:10-17", "9:28-36", "10:13"],
+        "John": ["1:44", "6:1-14", "12:21-22"]
+      },
       "prophecies": {}
     }
   },

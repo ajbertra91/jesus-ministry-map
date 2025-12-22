@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as KingsRouteImport } from './routes/kings'
+import { Route as DanielRouteImport } from './routes/daniel'
 import { Route as IndexRouteImport } from './routes/index'
 
 const MapRoute = MapRouteImport.update({
@@ -23,6 +24,11 @@ const KingsRoute = KingsRouteImport.update({
   path: '/kings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DanielRoute = DanielRouteImport.update({
+  id: '/daniel',
+  path: '/daniel',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,30 +37,34 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/daniel': typeof DanielRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/daniel': typeof DanielRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/daniel': typeof DanielRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/kings' | '/map'
+  fullPaths: '/' | '/daniel' | '/kings' | '/map'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/kings' | '/map'
-  id: '__root__' | '/' | '/kings' | '/map'
+  to: '/' | '/daniel' | '/kings' | '/map'
+  id: '__root__' | '/' | '/daniel' | '/kings' | '/map'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  DanielRoute: typeof DanielRoute
   KingsRoute: typeof KingsRoute
   MapRoute: typeof MapRoute
 }
@@ -75,6 +85,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof KingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/daniel': {
+      id: '/daniel'
+      path: '/daniel'
+      fullPath: '/daniel'
+      preLoaderRoute: typeof DanielRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  DanielRoute: DanielRoute,
   KingsRoute: KingsRoute,
   MapRoute: MapRoute,
 }

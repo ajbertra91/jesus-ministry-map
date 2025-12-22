@@ -1,5 +1,5 @@
 import { GiHolyGrail } from "react-icons/gi";
-import type { King } from "../../types/King";
+import type { King } from "../../types/King.types";
 import { useState } from "react";
 import { useGetKings } from "../../hooks/useGetKings";
 import Modal from "../Modal/Modal";

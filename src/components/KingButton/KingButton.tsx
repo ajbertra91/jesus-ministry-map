@@ -1,4 +1,4 @@
-import { type King } from '../../types/King';
+import { type King } from '../../types/King.types';
 import { GiHolyGrail } from "react-icons/gi";
 import './KingButton.css';
 import CircuitBoard from '../Graphics/CircuitBoard/CircuitBoard';

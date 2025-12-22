@@ -1,6 +1,6 @@
 import { createAPIMethod } from './createAPIMethod.ts';
 import { serviceRegistry } from './serviceRegistry.ts';
-import type { CityResponse } from '../../types/City.ts';
+import type { CityResponse } from '../../types/City.types.ts';
 
 export const fetchCity = createAPIMethod<{
   city: string;

@@ -2,6 +2,7 @@ import { http } from 'msw';
 
 import citiesData from '../data/cities/cities.json';
 import kingsData from '../data/kings/kings.json';
+import daniel11Data from '../data/daniel11/daniel11.json';
 
 export const handlers = [
   http.get('/api/cities', ({ request }) => {
@@ -31,6 +32,14 @@ export const handlers = [
   // GET /api/kings -> returns the kings JSON
   http.get('/api/kings', () => {
     return new Response(JSON.stringify(kingsData), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }),
+
+  // GET /api/daniel -> returns the daniel JSON
+  http.get('/api/daniel11', () => {
+    return new Response(JSON.stringify(daniel11Data), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });
