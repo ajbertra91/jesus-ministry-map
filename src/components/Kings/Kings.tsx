@@ -21,6 +21,17 @@ const Kings = () => {
     setOpenModal(true);
   };
 
+  const calculateHeight = (king: King) => {
+    if (!king) {
+      return 0;
+    }
+    const totalYears = Number(king.reignStart) - Number(king.reignEnd);
+    if (totalYears <= 0) {
+      return 10; // Minimum height for visibility
+    } else {
+      return totalYears * 10;
+    }
+  };
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -43,7 +54,7 @@ const Kings = () => {
                     <KingButton
                       king={king}
                       onClick={() => handleShowKing(king)}
-                      style={{ height: `${(Number(king?.reignStart) - Number(king?.reignEnd)) * 10}px` }}
+                      style={{ height: `${calculateHeight(king)}px` }}
                       split
                     />
                   </li>) : null
@@ -58,7 +69,7 @@ const Kings = () => {
                     <KingButton
                       king={king}
                       onClick={() => handleShowKing(king)}
-                      style={{ height: `${(Number(king?.reignStart) - Number(king?.reignEnd)) * 10}px` }}
+                      style={{ height: `${calculateHeight(king)}px` }}
                       split
                     />
                   </li>
@@ -79,7 +90,7 @@ const Kings = () => {
                   <KingButton
                     king={king}
                     onClick={() => handleShowKing(king)}
-                    style={{ height: `${(Number(king?.reignStart) - Number(king?.reignEnd)) * 10}px` }}
+                    style={{ height: `${calculateHeight(king)}px` }}
                     split
                   />
                 </li>
@@ -131,7 +142,7 @@ const Kings = () => {
           </InfoSection>
           <InfoSection label="Biological Aspectation" detail="">
             <div className="bar-code width-50-pc mt-4 h-60">
-              <BarCode/>
+              <BarCode />
             </div>
           </InfoSection>
         </div>
