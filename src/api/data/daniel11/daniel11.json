@@ -13,7 +13,8 @@
         "Darius I",
         "Xerxes I"
       ],
-      "dates": "c. 530-465 BC"
+      "dates": "c. 530-465 BC",
+      "imgName": ""
     },
     {
       "verses": "11:3",
@@ -23,7 +24,8 @@
       "figures": [
         "Alexander the Great"
       ],
-      "dates": "336-323 BC"
+      "dates": "336-323 BC",
+      "imgName": ""
     },
     {
       "verses": "11:4",
@@ -36,7 +38,8 @@
         "Seleucus I",
         "Ptolemy I"
       ],
-      "dates": "after 323 BC"
+      "dates": "after 323 BC",
+      "imgName": ""
     },
     {
       "verses": "11:5",
@@ -47,7 +50,8 @@
         "Ptolemy I Soter",
         "Seleucus I Nicator"
       ],
-      "dates": "early 3rd century BC"
+      "dates": "early 3rd century BC",
+      "imgName": "map-daniel-11-5_1.png"
     },
     {
       "verses": "11:6",
@@ -59,7 +63,8 @@
         "Ptolemy II Philadelphus",
         "Antiochus II Theos"
       ],
-      "dates": "c. 252 BC"
+      "dates": "c. 252 BC",
+      "imgName": "map-daniel-11-6.png"
     },
     {
       "verses": "11:7-9",
@@ -69,7 +74,8 @@
       "figures": [
         "Ptolemy III Euergetes"
       ],
-      "dates": "246-241 BC"
+      "dates": "246-241 BC",
+      "imgName": "map-daniel-11-7-8.png"
     },
     {
       "verses": "11:10",
@@ -80,7 +86,8 @@
         "Seleucus III",
         "Antiochus III the Great"
       ],
-      "dates": "late 3rd century BC"
+      "dates": "late 3rd century BC",
+      "imgName": "map-daniel-11-9-10.png"
     },
     {
       "verses": "11:11-12",
@@ -91,7 +98,8 @@
         "Ptolemy IV Philopator",
         "Antiochus III the Great"
       ],
-      "dates": "217 BC"
+      "dates": "217 BC",
+      "imgName": "map-daniel-11-11-13.png"
     },
     {
       "verses": "11:13-16",
@@ -101,7 +109,8 @@
       "figures": [
         "Antiochus III the Great"
       ],
-      "dates": "c. 200 BC"
+      "dates": "c. 200 BC",
+      "imgName": "map-daniel-11-14-17.png"
     },
     {
       "verses": "11:17",
@@ -113,7 +122,8 @@
         "Cleopatra I",
         "Ptolemy V"
       ],
-      "dates": "c. 193 BC"
+      "dates": "c. 193 BC",
+      "imgName": "map-daniel-11-14-17.png"
     },
     {
       "verses": "11:18-19",
@@ -123,7 +133,8 @@
       "figures": [
         "Antiochus III the Great"
       ],
-      "dates": "190-187 BC"
+      "dates": "190-187 BC",
+      "imgName": "map-daniel-11-18-19.png"
     },
     {
       "verses": "11:20",
@@ -133,7 +144,8 @@
       "figures": [
         "Seleucus IV Philopator"
       ],
-      "dates": "187-175 BC"
+      "dates": "187-175 BC",
+      "imgName": "map-daniel-11-25-27.png"
     },
     {
       "verses": "11:21",
@@ -143,7 +155,8 @@
       "figures": [
         "Antiochus IV Epiphanes"
       ],
-      "dates": "175 BC"
+      "dates": "175 BC",
+      "imgName": "map-daniel-11-28.png"
     },
     {
       "verses": "11:31",
@@ -153,7 +166,8 @@
       "figures": [
         "Antiochus IV Epiphanes"
       ],
-      "dates": "167 BC"
+      "dates": "167 BC",
+      "imgName": ""
     },
     {
       "verses": "11:40-45",
@@ -163,7 +177,8 @@
       "figures": [
         "Antiochus IV Epiphanes"
       ],
-      "dates": "164 BC"
+      "dates": "164 BC",
+      "imgName": ""
     }
   ]
 }

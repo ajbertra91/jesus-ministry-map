@@ -16,6 +16,10 @@ const DanielPage = () => {
     setSelectedEntry(entry);
   };
 
+  const getImagePath = (entry: Entry) => {
+    return entry.imgName ? `${import.meta.env.BASE_URL}images/daniel11/${entry.imgName}` : '';
+  }
+
   return (
     <div className="daniel-page">
       <KingsHeader title={<h1 className="title orbitron-bold text-3xl text-cyan mb-4">The 400 Silent Years</h1>} />
@@ -54,7 +58,7 @@ const DanielPage = () => {
             <InfoCard variant="one">
               <div className="selected-entry-details">
                 <div className="img">
-                  <img src="/assets/images/daniel-page/map-11-5.png" alt="Daniel 11 Illustration" />
+                  {selectedEntry?.imgName && <img src={getImagePath(selectedEntry)} alt="Daniel 11 Illustration" />}
                 </div>
                 <p className="orbitron-bold text-cyan mb-2">Daniel {selectedEntry?.verses}</p>
                 <p className="orbitron-regular text-yellow"><strong>Prophecy:</strong> {selectedEntry?.kjvText}</p>

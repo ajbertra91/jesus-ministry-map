@@ -5,6 +5,7 @@ export type Entry = {
   kjvText: string;
   figures: string[];
   dates: string;
+  imgName?: string;
 }
 
 export type Daniel11Response = {
