@@ -58,9 +58,13 @@
   .item-content {
     flex: 1 0 auto;
     display: grid;
-    grid-template-columns: auto 1fr;
+    /* make a fixed-width column for the icon and a flexible column for the text */
+    grid-template-columns: 40px 1fr;
     align-items: center;
     gap: 8px;
+    /* contain the absolutely-positioned pseudo element inside the button */
+    position: relative;
+
     &:before {
       content: '';
       position: absolute;
@@ -71,11 +75,26 @@
       border: 1px solid rgba(var(--color-red), 0.3);
       corner-shape: square square square bevel;
     }
+
+    &.is-selected {
+      background-color: rgba(var(--color-red), 0.4);
+      border-color: rgba(var(--color-red), 1);
+
+      &:before {
+        background-color: rgba(var(--color-red), 0.7);
+      }
+    }
   }
 
   .item-cell {
     &.icon-cell--med {
-      flex: 0 0 40px;
+      /* this element lives inside a grid (the button). flex sizing won't apply here,
+         so give it a fixed width and center its contents */
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
     }
 
     .item-text {
@@ -84,8 +103,6 @@
       }
     }
   }
-
-
 
   .icon-container {
     display: flex;
@@ -121,6 +138,12 @@
         max-width: 100%;
         height: auto;
       }
+    }
+  }
+
+  .info-card {
+    &.info-card--one {
+      margin-right: 10px;
     }
   }
 }

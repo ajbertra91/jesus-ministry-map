@@ -5,8 +5,12 @@
   background-color: rgba(var(--color-darkest-blue), 0.2);
 
   &.info-card--one {
+    box-shadow: 0 0 10px rgba(var(--color-red), 0.5);
     padding: 1rem 1rem 1rem 2rem;
-    position: relative;
+    position: sticky;
+    top: 1rem;
+    z-index: 5;
+    align-self: start;
 
     &:before {
       content: '';

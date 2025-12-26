@@ -20,10 +20,34 @@ const DanielPage = () => {
     return entry.imgName ? `${import.meta.env.BASE_URL}images/daniel11/${entry.imgName}` : '';
   }
 
+  const getFullfillment = (entry: Entry) => {
+    if (Array.isArray(entry.historicalFulfillment)) {
+      return (
+        <>
+          <p className="orbitron-regular text-cyan"><strong>Fulfillment:</strong> </p>
+          <ul>
+            {entry?.historicalFulfillment.map((fulfillment, index) => (
+              <li key={index}>
+                <span className="text-white">
+                  {fulfillment}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </>
+      );
+    }
+    return <p className="orbitron-regular text-cyan"><strong>Fulfillment:</strong> <span className="text-white">{selectedEntry?.historicalFulfillment}</span></p>;
+  }
+
   return (
     <div className="daniel-page">
       <KingsHeader title={<h1 className="title orbitron-bold text-3xl text-cyan mb-4">The 400 Silent Years</h1>} />
       <p className="orbitron-regular text-white">Daniel 11 details in advance, what is typically called the 400 silent years between testiments.</p>
+      <ul>
+        <li className="orbitron-regular text-white">135 prophetic statements in 35 verses</li>
+        <li className="orbitron-regular text-white">All fulfilled historically up to verse 35</li>
+      </ul>
 
       <div className="grid">
         <section className="grid-item">
@@ -35,7 +59,7 @@ const DanielPage = () => {
           {data?.entries.map((entry) => (
             <div key={entry?.dates} className="item-row flex gap-10">
               <span className="icon-cell--large"><PiDisc /></span>
-              <Button className="item-content text-left" onClick={() => handleClick(entry)}>
+              <Button className={`item-content text-left ${selectedEntry?.dates === entry.dates ? 'is-selected' : ''}`} onClick={() => handleClick(entry)}>
                 <span className="item-cell icon-cell--med">
                   <div className="icon-container">
                     <PiDiamondsFourDuotone className='icon--med' />
@@ -61,8 +85,10 @@ const DanielPage = () => {
                   {selectedEntry?.imgName && <img src={getImagePath(selectedEntry)} alt="Daniel 11 Illustration" />}
                 </div>
                 <p className="orbitron-bold text-cyan mb-2">Daniel {selectedEntry?.verses}</p>
-                <p className="orbitron-regular text-yellow"><strong>Prophecy:</strong> {selectedEntry?.kjvText}</p>
-                <p className="orbitron-regular text-white"><strong>Fulfillment:</strong> {selectedEntry?.historicalFulfillment}</p>
+                <p className="orbitron-regular text-cyan"><strong>Prophecy:</strong> <span className="text-yellow">{selectedEntry?.kjvText}</span></p>
+                {getFullfillment(selectedEntry)}
+                {selectedEntry?.figures && (<p className="orbitron-regular text-cyan"><strong>Key Figures:</strong> <span className="text-white">{selectedEntry?.figures.join(', ')}</span></p>)}
+                {selectedEntry?.dates && (<p className="orbitron-regular text-cyan"><strong>Dates:</strong> <span className="text-white">{selectedEntry?.dates}</span></p>)}
               </div>
             </InfoCard>
           )}

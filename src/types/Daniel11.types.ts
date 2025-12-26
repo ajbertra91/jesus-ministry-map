@@ -1,7 +1,7 @@
 export type Entry = {
   verses: string;
   prophecy: string;
-  historicalFulfillment: string;
+  historicalFulfillment: string | string[];
   kjvText: string;
   figures: string[];
   dates: string;
