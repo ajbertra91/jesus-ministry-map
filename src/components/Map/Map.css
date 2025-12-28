@@ -1,6 +1,52 @@
-.app.content.map-container {
-  width: 50%;
-  border: 1px solid rgb(var(--color-red));
+.map {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.map-container {
+  padding-left: 5px;
+}
+
+.timeline-years {
+  border-bottom: 1px solid rgb(var(--color-red));
+  padding-bottom: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.timeline-events {
+  .event-group-container {
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+  }
+
+  .event-group {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    .event-group-label {
+      font-size: 1.25rem;
+    }
+  }
+
+  .events-list,
+  .event {
+    padding: 0;
+    margin: 0;
+  }
+
+  .event-group {
+    &+.event-group {
+      margin-top: 1rem;
+    }
+  }
 }
 
 .map-svg {
@@ -12,6 +58,7 @@
 #Caesarea-Philippi,
 #Tyre {
   cursor: pointer;
+
   &:hover {
     outline: 2px solid hsl(from var(--color-red) h s l)
   }

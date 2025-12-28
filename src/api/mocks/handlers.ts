@@ -1,8 +1,8 @@
 import { http } from 'msw';
-
 import citiesData from '../data/cities/cities.json';
-import kingsData from '../data/kings/kings.json';
 import daniel11Data from '../data/daniel11/daniel11.json';
+import jesusData from '../data/jesus/jesus.json';
+import kingsData from '../data/kings/kings.json';
 
 export const handlers = [
   http.get('/api/cities', ({ request }) => {
@@ -40,6 +40,14 @@ export const handlers = [
   // GET /api/daniel -> returns the daniel JSON
   http.get('/api/daniel11', () => {
     return new Response(JSON.stringify(daniel11Data), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }),
+
+  // GET /api/jesus -> returns the jesus JSON
+  http.get('/api/jesus', () => {
+    return new Response(JSON.stringify(jesusData), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });

@@ -5,10 +5,14 @@
   corner-shape: square square bevel;
   padding: 10px 20px;
   position: relative;
-  color: var(--text-color);
-  z-index: 1;
-
+  color: rgb(var(--color-cyan));
   cursor: pointer;
+
+  .btn-content {
+    position: relative;
+    z-index: 1;
+  }
+
   &::before,
   &::after {
     content: '';
@@ -37,6 +41,14 @@
 
     &::before {
       background-color: rgba(var(--color-red), 0.7);
+    }
+  }
+
+  &.is-active {
+    border: 1px solid rgba(var(--color-red), 1);
+
+    &::before {
+      background-color: rgba(var(--color-red), 0.4);
     }
   }
 }

@@ -11,16 +11,16 @@ function App({ children }: { children: React.ReactNode }) {
     let classes = '';
     switch (currentPathname) {
       case '/':
-        classes += ' blue-bg';
+        classes += 'home blue-bg';
         break;
       case '/map':
-        classes += ' red-bg';
+        classes += 'map red-bg';
         break;
       case '/kings':
-        classes += ' red-bg';
+        classes += 'kings red-bg';
         break;
       case '/daniel':
-        classes += ' red-bg';
+        classes += 'ddaniel red-bg';
         break;
       default:
         break;
