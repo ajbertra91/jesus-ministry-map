@@ -1,0 +1,1 @@
+import{j as t}from"./index-BrXSbeQ_.js";const c=({children:s,className:r,onClick:n,props:e})=>{const o=`btn orbitron-regular uppercase ${r}`.trim();return t.jsx("button",{...e,className:o,onClick:n,children:t.jsx("div",{className:"btn-content",children:s})})};export{c as B};
