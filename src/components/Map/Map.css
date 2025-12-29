@@ -40,6 +40,44 @@
   .event {
     padding: 0;
     margin: 0;
+    list-style: none;
+  }
+
+  .event-label {
+    display: inline-flex;
+    align-items: start;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  .event {
+    &+.event {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .event-radio {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid rgba(var(--color-red), 0.3);
+    background: rgba(var(--color-red), 0.3);
+    display: inline-block;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: 5px;
+  }
+
+  .event-radio:checked {
+    background-color: rgba(var(--color-red), 1);
+  }
+
+  .event-radio:focus {
+    outline: 2px solid rgba(var(--color-red), 1);
+    ;
+    outline-offset: 2px;
   }
 
   .event-group {
@@ -61,5 +99,29 @@
 
   &:hover {
     outline: 2px solid hsl(from var(--color-red) h s l)
+  }
+}
+
+.city {
+  path {
+    fill: rgba(var(--color-cyan), 1)
+  }
+
+  circle {
+    fill: rgba(var(--color-cyan), 1);
+    stroke-width: 4.17px;
+    stroke: rgba(var(--color-red), 1);
+  }
+
+  &.event-highlight {
+    path {
+      fill: rgba(var(--color-red), 1)
+    }
+
+    circle {
+      fill: rgba(var(--color-red), 1);
+      stroke: rgba(var(--color-red), 1);
+      stroke-width: 10px;
+    }
   }
 }
