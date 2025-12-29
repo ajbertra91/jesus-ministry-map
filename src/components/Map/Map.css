@@ -102,7 +102,8 @@
   }
 }
 
-.city {
+.map-city,
+.map-label {
   path {
     fill: rgba(var(--color-cyan), 1)
   }
@@ -112,16 +113,16 @@
     stroke-width: 4.17px;
     stroke: rgba(var(--color-red), 1);
   }
+}
 
-  &.event-highlight {
-    path {
-      fill: rgba(var(--color-red), 1)
-    }
+.event-highlight {
+  path {
+    fill: rgba(var(--color-red), 1)
+  }
 
-    circle {
-      fill: rgba(var(--color-red), 1);
-      stroke: rgba(var(--color-red), 1);
-      stroke-width: 10px;
-    }
+  circle {
+    fill: rgba(var(--color-red), 1);
+    stroke: rgba(var(--color-red), 1);
+    stroke-width: 10px;
   }
 }
