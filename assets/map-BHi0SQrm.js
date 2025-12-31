@@ -1,4 +1,4 @@
-import{j as c,r as Z}from"./index-CIgG5Dys.js";import{c as J,s as C,u as B}from"./serviceRegistry-BxKS0aJV.js";import{I as w,M as I}from"./InfoSection-SotxlW1E.js";import{B as L}from"./Button-BBjp9Kne.js";const N=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+import{j as c,r as Z}from"./index-DdL5j7ur.js";import{c as J,s as C,u as B}from"./serviceRegistry-DilIcroc.js";import{I as w,M as I}from"./InfoSection-BaJF6BCn.js";import{B as L}from"./Button-DQ6Bn7pW.js";const N=`<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 2088 2863" version="1.1" xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
