@@ -15,7 +15,7 @@ const cards = {
 };
 
 const DivineCouncilPage = () => {
-  const [selectedCard, setSelectedCard] = useState<string>('');
+  const [_, setSelectedCard] = useState<string>('');
   const handleClick = (card: string) => {
     if (!card) return;
 
