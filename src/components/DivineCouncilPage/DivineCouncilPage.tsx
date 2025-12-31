@@ -59,14 +59,14 @@ const DivineCouncilPage = () => {
         </IconChip>
       </div>
       <div className="grid">
-        <div className="grid-item card">
-          <div className="card-title orbitron-regular text-cyan">Resurrection</div>
+        <div className={`grid-item card ${cards.RESURRECTION.toLowerCase()}`} onClick={() => handleClick(cards.RESURRECTION)}>
+          <div className="card-title orbitron-regular text-cyan">{cards.RESURRECTION}</div>
         </div>
-        <div className="grid-item card">
-          <div className="card-title orbitron-regular text-cyan">Holy Spirit</div>
+        <div className={`grid-item card ${cards.HOLY_SPIRIT.toLowerCase()}`} onClick={() => handleClick(cards.HOLY_SPIRIT)}>
+          <div className="card-title orbitron-regular text-cyan">{cards.HOLY_SPIRIT}</div>
         </div>
-        <div className="grid-item card">
-          <div className="card-title orbitron-regular text-cyan">Church</div>
+        <div className={`grid-item card ${cards.CHURCH.toLowerCase()}`} onClick={() => handleClick(cards.CHURCH)}>
+          <div className="card-title orbitron-regular text-cyan">{cards.CHURCH}</div>
         </div>
       </div>
     </div>
