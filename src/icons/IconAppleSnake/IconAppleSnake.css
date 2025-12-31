@@ -1,0 +1,11 @@
+#icon-apple-snake {
+  path {
+    fill: rgba(var(--color-red), 0.3);
+  }
+}
+
+.img-apple-snake {
+  height: 100%;
+  width: auto;
+  opacity: 0.7;
+}

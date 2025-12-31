@@ -1,0 +1,89 @@
+.divine-council-page {
+  padding-left: 50px;
+  width: calc(100% - 50px);
+  padding-bottom: 50px;
+  margin-top: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 1rem;
+  }
+
+  .card {
+    border: 1px solid rgba(var(--color-red), 0.3);
+    border-radius: 30px;
+    corner-shape: square square square bevel;
+    height: 300px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: relative;
+      z-index: 0;
+    }
+
+    &.watchers {
+      .icon-skull-runes {
+        margin-top: -50px;
+      }
+    }
+
+    &.babel {
+      .img-broken-babel {
+        margin-top: -50px;
+      }
+    }
+
+    &:before {
+      content: '';
+      inset: 0;
+      display: block;
+      position: absolute;
+      background-color: rgba(var(--color-red), 0.1);
+      z-index: 0;
+    }
+
+    &.fall,
+    &.watchers,
+    &.babel {
+      &:hover {
+        cursor: pointer;
+        border-color: rgba(var(--color-red), 1);
+        position: relative;
+
+        &:before {
+          background-color: rgba(var(--color-red), 0.3);
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .card-title {
+    padding: 10px;
+    background-color: rgba(var(--color-darkest-blue), 0.8);
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  .card-sub-title {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    z-index: 1;
+  }
+
+  .messiah-container {
+    width: 120px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}

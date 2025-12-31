@@ -166,11 +166,18 @@ body {
   transform: rotate(270deg);
 }
 
+.font-8 {
+  font-size: 0.5rem;
+}
+
+.font-10 {
+  font-size: 0.625rem;
+}
+
 .text-red {
   color: rgb(var(--color-red));
 }
 
-/* text color helpers for CSS variables defined in :root */
 .text-cyan {
   color: rgb(var(--color-cyan));
 }

@@ -20,7 +20,10 @@ function App({ children }: { children: React.ReactNode }) {
         classes += 'kings red-bg';
         break;
       case '/daniel':
-        classes += 'ddaniel red-bg';
+        classes += 'daniel red-bg';
+        break;
+      case '/divine-council':
+        classes += 'divine-council red-bg';
         break;
       default:
         break;

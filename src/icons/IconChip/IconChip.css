@@ -1,0 +1,22 @@
+.icon-chip-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .icon-chip-content {
+    position: absolute;
+  }
+}
+
+.icon-chip {
+  .outer-frame {
+    fill: rgb(10, 10, 26);
+    stroke: rgb(62, 62, 78);
+    stroke-width: 0.23px;
+  }
+
+  .inner {
+    fill: rgb(62, 62, 78);
+  }
+}

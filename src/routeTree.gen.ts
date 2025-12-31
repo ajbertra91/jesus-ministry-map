@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as MapRouteImport } from './routes/map'
 import { Route as KingsRouteImport } from './routes/kings'
+import { Route as DivineCouncilRouteImport } from './routes/divine-council'
 import { Route as DanielRouteImport } from './routes/daniel'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -22,6 +23,11 @@ const MapRoute = MapRouteImport.update({
 const KingsRoute = KingsRouteImport.update({
   id: '/kings',
   path: '/kings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DivineCouncilRoute = DivineCouncilRouteImport.update({
+  id: '/divine-council',
+  path: '/divine-council',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DanielRoute = DanielRouteImport.update({
@@ -38,12 +44,14 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/daniel': typeof DanielRoute
+  '/divine-council': typeof DivineCouncilRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/daniel': typeof DanielRoute
+  '/divine-council': typeof DivineCouncilRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
 }
@@ -51,20 +59,22 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/daniel': typeof DanielRoute
+  '/divine-council': typeof DivineCouncilRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/daniel' | '/kings' | '/map'
+  fullPaths: '/' | '/daniel' | '/divine-council' | '/kings' | '/map'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/daniel' | '/kings' | '/map'
-  id: '__root__' | '/' | '/daniel' | '/kings' | '/map'
+  to: '/' | '/daniel' | '/divine-council' | '/kings' | '/map'
+  id: '__root__' | '/' | '/daniel' | '/divine-council' | '/kings' | '/map'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DanielRoute: typeof DanielRoute
+  DivineCouncilRoute: typeof DivineCouncilRoute
   KingsRoute: typeof KingsRoute
   MapRoute: typeof MapRoute
 }
@@ -83,6 +93,13 @@ declare module '@tanstack/react-router' {
       path: '/kings'
       fullPath: '/kings'
       preLoaderRoute: typeof KingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/divine-council': {
+      id: '/divine-council'
+      path: '/divine-council'
+      fullPath: '/divine-council'
+      preLoaderRoute: typeof DivineCouncilRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/daniel': {
@@ -105,6 +122,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DanielRoute: DanielRoute,
+  DivineCouncilRoute: DivineCouncilRoute,
   KingsRoute: KingsRoute,
   MapRoute: MapRoute,
 }
