@@ -10,11 +10,11 @@ export default ({ mode }: ConfigEnv) => {
   return defineConfig({
     base: mode !== 'development' ? 'https://ajbertra91.github.io/jesus-ministry-map/' : '',
     plugins: [
-      react(),
       tanstackRouterVite({
-          target: 'react',
-          autoCodeSplitting: true,
-        }),
+        target: 'react',
+        autoCodeSplitting: true,
+      }),
+      react(),
     ],
     server: {
       port: port ?? 5173,

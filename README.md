@@ -9,3 +9,11 @@
 ## About
 
 1st century map of Judea with Cyberpunk aesthetic that tracks the ministry of Jesus in chronological order.
+
+## Development
+
+Use pnpm for all installs and scripts:
+
+- `pnpm install`
+- `pnpm dev`
+- `pnpm build`

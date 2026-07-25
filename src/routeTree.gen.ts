@@ -9,25 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as MapRouteImport } from './routes/map'
-import { Route as KingsRouteImport } from './routes/kings'
-import { Route as DivineCouncilRouteImport } from './routes/divine-council'
-import { Route as DanielRouteImport } from './routes/daniel'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as DanielRouteImport } from './routes/daniel'
+import { Route as DivineCouncilRouteImport } from './routes/divine-council'
+import { Route as KingsRouteImport } from './routes/kings'
+import { Route as MapRouteImport } from './routes/map'
 
-const MapRoute = MapRouteImport.update({
-  id: '/map',
-  path: '/map',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const KingsRoute = KingsRouteImport.update({
-  id: '/kings',
-  path: '/kings',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DivineCouncilRoute = DivineCouncilRouteImport.update({
-  id: '/divine-council',
-  path: '/divine-council',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DanielRoute = DanielRouteImport.update({
@@ -35,9 +25,19 @@ const DanielRoute = DanielRouteImport.update({
   path: '/daniel',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const DivineCouncilRoute = DivineCouncilRouteImport.update({
+  id: '/divine-council',
+  path: '/divine-council',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KingsRoute = KingsRouteImport.update({
+  id: '/kings',
+  path: '/kings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MapRoute = MapRouteImport.update({
+  id: '/map',
+  path: '/map',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -81,25 +81,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/map': {
-      id: '/map'
-      path: '/map'
-      fullPath: '/map'
-      preLoaderRoute: typeof MapRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/kings': {
-      id: '/kings'
-      path: '/kings'
-      fullPath: '/kings'
-      preLoaderRoute: typeof KingsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/divine-council': {
-      id: '/divine-council'
-      path: '/divine-council'
-      fullPath: '/divine-council'
-      preLoaderRoute: typeof DivineCouncilRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/daniel': {
@@ -109,11 +95,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DanielRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/divine-council': {
+      id: '/divine-council'
+      path: '/divine-council'
+      fullPath: '/divine-council'
+      preLoaderRoute: typeof DivineCouncilRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kings': {
+      id: '/kings'
+      path: '/kings'
+      fullPath: '/kings'
+      preLoaderRoute: typeof KingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/map': {
+      id: '/map'
+      path: '/map'
+      fullPath: '/map'
+      preLoaderRoute: typeof MapRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
