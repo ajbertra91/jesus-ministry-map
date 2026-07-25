@@ -1,0 +1,1 @@
+import{W as e}from"./index-BpKANzlG.js";var t=e(),n=({children:e,className:n,onClick:r,props:i})=>{let a=`btn orbitron-regular uppercase ${n}`.trim();return(0,t.jsx)(`button`,{...i,className:a,onClick:r,children:(0,t.jsx)(`div`,{className:`btn-content`,children:e})})};export{n as t};
