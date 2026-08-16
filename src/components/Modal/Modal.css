@@ -13,7 +13,7 @@
   border-radius: 50px;
   corner-shape: square square square bevel;
   background-color: rgba(var(--color-darkest-blue), 0.8);
-  inset: 20% 10% 10%;
+  /* inset: 20% 10% 10%; */
   padding: 1rem;
   position: absolute;
 
