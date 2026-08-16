@@ -25,6 +25,11 @@ const Nav = () => {
         <IconRect />
         <span>Daniel</span>
       </Link>
+      <Link to="/parables" className='link orbitron-regular text-cyan'>
+        <div className="bg-red" />
+        <IconRect />
+        <span>Parables</span>
+      </Link>
     </nav>
   );
 };

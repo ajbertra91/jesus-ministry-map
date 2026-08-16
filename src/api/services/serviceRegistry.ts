@@ -4,10 +4,12 @@ const CITIES = '/api/cities';
 const DANIEL11 = '/api/daniel11';
 const JESUS = '/api/jesus';
 const KINGS = '/api/kings';
+const PARABLES = '/api/parables';
 
 export const serviceRegistry = {
   CITIES,
   DANIEL11,
   JESUS,
   KINGS,
+  PARABLES,
 };

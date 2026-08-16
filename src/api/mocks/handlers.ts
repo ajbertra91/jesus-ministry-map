@@ -3,6 +3,7 @@ import citiesData from '../data/cities/cities.json';
 import daniel11Data from '../data/daniel11/daniel11.json';
 import jesusData from '../data/jesus/jesus.json';
 import kingsData from '../data/kings/kings.json';
+import parablesData from '../data/parables/parables.json';
 
 export const handlers = [
   http.get('/api/cities', ({ request }) => {
@@ -48,6 +49,14 @@ export const handlers = [
   // GET /api/jesus -> returns the jesus JSON
   http.get('/api/jesus', () => {
     return new Response(JSON.stringify(jesusData), {
+      status: 200,
+      headers: { 'Content-Type': 'application/json' },
+    });
+  }),
+
+  // GET /api/parables -> returns the parables JSON
+  http.get('/api/parables', () => {
+    return new Response(JSON.stringify(parablesData), {
       status: 200,
       headers: { 'Content-Type': 'application/json' },
     });

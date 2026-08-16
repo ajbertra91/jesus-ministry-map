@@ -22,8 +22,8 @@ function App({ children }: { children: React.ReactNode }) {
       case '/daniel':
         classes += 'daniel red-bg';
         break;
-      case '/divine-council':
-        classes += 'divine-council red-bg';
+      case '/parables':
+        classes += 'parables red-bg';
         break;
       default:
         break;

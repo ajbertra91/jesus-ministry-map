@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as DanielRouteImport } from './routes/daniel'
 import { Route as KingsRouteImport } from './routes/kings'
 import { Route as MapRouteImport } from './routes/map'
+import { Route as ParablesRouteImport } from './routes/parables'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,18 +35,25 @@ const MapRoute = MapRouteImport.update({
   path: '/map',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ParablesRoute = ParablesRouteImport.update({
+  id: '/parables',
+  path: '/parables',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/daniel': typeof DanielRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
+  '/parables': typeof ParablesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/daniel': typeof DanielRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
+  '/parables': typeof ParablesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,13 +61,14 @@ export interface FileRoutesById {
   '/daniel': typeof DanielRoute
   '/kings': typeof KingsRoute
   '/map': typeof MapRoute
+  '/parables': typeof ParablesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/daniel' | '/kings' | '/map'
+  fullPaths: '/' | '/daniel' | '/kings' | '/map' | '/parables'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/daniel' | '/kings' | '/map'
-  id: '__root__' | '/' | '/daniel' | '/kings' | '/map'
+  to: '/' | '/daniel' | '/kings' | '/map' | '/parables'
+  id: '__root__' | '/' | '/daniel' | '/kings' | '/map' | '/parables'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -67,6 +76,7 @@ export interface RootRouteChildren {
   DanielRoute: typeof DanielRoute
   KingsRoute: typeof KingsRoute
   MapRoute: typeof MapRoute
+  ParablesRoute: typeof ParablesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -99,6 +109,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MapRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/parables': {
+      id: '/parables'
+      path: '/parables'
+      fullPath: '/parables'
+      preLoaderRoute: typeof ParablesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -107,6 +124,7 @@ const rootRouteChildren: RootRouteChildren = {
   DanielRoute: DanielRoute,
   KingsRoute: KingsRoute,
   MapRoute: MapRoute,
+  ParablesRoute: ParablesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
