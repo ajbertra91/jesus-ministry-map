@@ -1,0 +1,78 @@
+{
+  "branches": [
+    {
+      "id": "kingdom",
+      "label": "7 Kingdom Parables",
+      "tagline": "Matthew 13, with Luke's echoes",
+      "parableIds": ["sower", "wheat-and-tares", "mustard-seed", "leaven", "hidden-treasure", "pearl", "net"]
+    },
+    {
+      "id": "value",
+      "label": "Value",
+      "tagline": "Hidden worth is worth everything",
+      "parableIds": ["lost-sheep", "lost-coin", "prodigal-son", "unjust-steward", "growing-seed"]
+    },
+    {
+      "id": "mercy",
+      "label": "Mercy",
+      "tagline": "Forgiveness owed and forgiveness given",
+      "parableIds": ["good-samaritan", "unforgiving-servant", "two-debtors", "pharisee-and-tax-collector", "workers-in-vineyard", "two-sons"]
+    },
+    {
+      "id": "vigilance",
+      "label": "Vigilance",
+      "tagline": "Stay ready, the hour is unknown",
+      "parableIds": ["ten-virgins", "talents", "minas", "faithful-servant", "rich-fool", "wise-and-foolish-builders"]
+    },
+    {
+      "id": "judgment",
+      "label": "Judgment",
+      "tagline": "Every account is settled",
+      "parableIds": ["wicked-tenants", "wedding-feast", "sheep-and-goats", "rich-man-and-lazarus", "barren-fig-tree", "persistent-widow"]
+    },
+    {
+      "id": "johns-figures",
+      "label": "John's Figures",
+      "tagline": "Signs spoken in the fourth gospel",
+      "parableIds": ["good-shepherd", "true-vine", "grain-of-wheat", "bread-of-life", "woman-in-childbirth", "light-of-the-world"]
+    }
+  ],
+  "parables": [
+    { "id": "sower", "title": "The Sower", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:1-23" }, { "gospel": "Mark", "ref": "4:1-20" }, { "gospel": "Luke", "ref": "8:4-15" }], "summary": "A farmer scatters seed on path, rocky ground, thorns, and good soil. Only the good soil produces a crop. The seed is the word of the kingdom; the soils are the ways hearts receive it." },
+    { "id": "mustard-seed", "title": "The Mustard Seed", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:31-32" }, { "gospel": "Mark", "ref": "4:30-32" }, { "gospel": "Luke", "ref": "13:18-19" }], "summary": "The smallest of seeds grows into a tree large enough for birds to nest in its branches. The kingdom starts small and grows beyond expectation." },
+    { "id": "leaven", "title": "The Leaven", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:33" }, { "gospel": "Luke", "ref": "13:20-21" }], "summary": "A woman works a small amount of yeast through a large batch of dough until all of it rises. The kingdom works quietly through the whole of things." },
+    { "id": "growing-seed", "title": "The Growing Seed", "branchId": "value", "refs": [{ "gospel": "Mark", "ref": "4:26-29" }], "summary": "A man scatters seed and sleeps and rises while it grows on its own, day by day, until harvest. The kingdom grows by a power the farmer does not control." },
+    { "id": "wheat-and-tares", "title": "The Wheat and the Tares", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:24-30" }], "summary": "An enemy sows weeds among good wheat. The farmer lets both grow together until harvest, when the weeds are burned and the wheat is gathered into the barn." },
+    { "id": "net", "title": "The Net", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:47-50" }], "summary": "A net cast into the sea gathers fish of every kind. At the shore the good are collected and the bad are thrown away. So it will be at the end of the age." },
+    { "id": "hidden-treasure", "title": "The Hidden Treasure", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:44" }], "summary": "A man finds treasure buried in a field, hides it again, and sells everything he owns to buy that field. The kingdom is worth every cost." },
+    { "id": "pearl", "title": "The Pearl of Great Price", "branchId": "kingdom", "refs": [{ "gospel": "Matthew", "ref": "13:45-46" }], "summary": "A merchant searching for fine pearls finds one of great value and sells all he has to buy it. The kingdom outweighs every other possession." },
+    { "id": "lost-sheep", "title": "The Lost Sheep", "branchId": "value", "refs": [{ "gospel": "Matthew", "ref": "18:12-14" }, { "gospel": "Luke", "ref": "15:3-7" }], "summary": "A shepherd with a hundred sheep leaves the ninety-nine to search for the one that wandered off, and rejoices more over that one than the rest." },
+    { "id": "lost-coin", "title": "The Lost Coin", "branchId": "value", "refs": [{ "gospel": "Luke", "ref": "15:8-10" }], "summary": "A woman with ten silver coins loses one, sweeps the house until she finds it, and calls her friends together to celebrate." },
+    { "id": "prodigal-son", "title": "The Prodigal Son", "branchId": "value", "refs": [{ "gospel": "Luke", "ref": "15:11-32" }], "summary": "A younger son takes his inheritance, wastes it, and returns home in shame. His father runs to meet him, restores him as a son, and throws a feast." },
+    { "id": "unjust-steward", "title": "The Unjust Steward", "branchId": "value", "refs": [{ "gospel": "Luke", "ref": "16:1-13" }], "summary": "A manager about to lose his job reduces debts owed to his master to secure favor for his future. He is commended for shrewdness, not honesty." },
+    { "id": "good-samaritan", "title": "The Good Samaritan", "branchId": "mercy", "refs": [{ "gospel": "Luke", "ref": "10:25-37" }], "summary": "A man beaten by robbers is passed by a priest and a Levite, then helped by a Samaritan who bandages his wounds and pays for his care. The neighbor is the one who shows mercy." },
+    { "id": "unforgiving-servant", "title": "The Unforgiving Servant", "branchId": "mercy", "refs": [{ "gospel": "Matthew", "ref": "18:21-35" }], "summary": "A king forgives a servant an enormous debt. That servant then refuses to forgive a small debt owed to him, and is handed over for judgment." },
+    { "id": "two-debtors", "title": "The Two Debtors", "branchId": "mercy", "refs": [{ "gospel": "Luke", "ref": "7:41-43" }], "summary": "A moneylender forgives two debts, one large and one small. Jesus asks which debtor will love him more, and answers his own question: the one forgiven more." },
+    { "id": "pharisee-and-tax-collector", "title": "The Pharisee and the Tax Collector", "branchId": "mercy", "refs": [{ "gospel": "Luke", "ref": "18:9-14" }], "summary": "A Pharisee prays boasting of his righteousness. A tax collector prays only for mercy. Jesus says the tax collector goes home justified." },
+    { "id": "workers-in-vineyard", "title": "The Workers in the Vineyard", "branchId": "mercy", "refs": [{ "gospel": "Matthew", "ref": "20:1-16" }], "summary": "A landowner hires workers at different hours of the day and pays them all the same wage. The last are treated as generously as the first." },
+    { "id": "two-sons", "title": "The Two Sons", "branchId": "mercy", "refs": [{ "gospel": "Matthew", "ref": "21:28-32" }], "summary": "A father asks two sons to work his vineyard. One refuses and later goes, the other agrees and does not. Jesus says the one who obeyed did his father's will." },
+    { "id": "ten-virgins", "title": "The Ten Virgins", "branchId": "vigilance", "refs": [{ "gospel": "Matthew", "ref": "25:1-13" }], "summary": "Ten bridesmaids wait for a bridegroom. Five bring enough oil for their lamps, five do not. When the groom arrives at midnight, the unprepared are shut out." },
+    { "id": "talents", "title": "The Talents", "branchId": "vigilance", "refs": [{ "gospel": "Matthew", "ref": "25:14-30" }], "summary": "A master entrusts money to three servants before a journey. Two invest and multiply what they were given; one buries his and is condemned for fear and idleness." },
+    { "id": "minas", "title": "The Minas", "branchId": "vigilance", "refs": [{ "gospel": "Luke", "ref": "19:11-27" }], "summary": "A nobleman gives ten servants money to invest while he travels to receive a kingdom. Those who put it to work are rewarded with authority; the fearful servant is not." },
+    { "id": "faithful-servant", "title": "The Faithful and Wise Servant", "branchId": "vigilance", "refs": [{ "gospel": "Matthew", "ref": "24:45-51" }, { "gospel": "Luke", "ref": "12:42-48" }], "summary": "A master leaves a servant in charge of his household. The faithful servant is found doing his duty when the master returns; the wicked one is not." },
+    { "id": "rich-fool", "title": "The Rich Fool", "branchId": "vigilance", "refs": [{ "gospel": "Luke", "ref": "12:13-21" }], "summary": "A rich man tears down his barns to build bigger ones, planning years of ease. That night his life is required of him. Storing up for yourself is not the same as being rich toward God." },
+    { "id": "wise-and-foolish-builders", "title": "The Wise and Foolish Builders", "branchId": "vigilance", "refs": [{ "gospel": "Matthew", "ref": "7:24-27" }, { "gospel": "Luke", "ref": "6:46-49" }], "summary": "One builder sets his house on rock, another on sand. The storm comes for both. Only the house on rock stands. Hearing without doing is a foundation of sand." },
+    { "id": "wicked-tenants", "title": "The Wicked Tenants", "branchId": "judgment", "refs": [{ "gospel": "Matthew", "ref": "21:33-46" }, { "gospel": "Mark", "ref": "12:1-12" }, { "gospel": "Luke", "ref": "20:9-19" }], "summary": "Tenants of a vineyard beat the owner's servants and kill his son to seize the inheritance. The owner destroys the tenants and gives the vineyard to others." },
+    { "id": "wedding-feast", "title": "The Wedding Feast", "branchId": "judgment", "refs": [{ "gospel": "Matthew", "ref": "22:1-14" }, { "gospel": "Luke", "ref": "14:15-24" }], "summary": "A king prepares a wedding banquet, but the invited guests refuse to come. He sends his servants into the streets to gather anyone they find, filling the hall." },
+    { "id": "sheep-and-goats", "title": "The Sheep and the Goats", "branchId": "judgment", "refs": [{ "gospel": "Matthew", "ref": "25:31-46" }], "summary": "The Son of Man separates all nations as a shepherd separates sheep from goats, based on how they treated the hungry, the stranger, and the imprisoned." },
+    { "id": "rich-man-and-lazarus", "title": "The Rich Man and Lazarus", "branchId": "judgment", "refs": [{ "gospel": "Luke", "ref": "16:19-31" }], "summary": "A rich man ignores the beggar Lazarus at his gate. After death their situations reverse completely, and a great chasm is fixed between them." },
+    { "id": "barren-fig-tree", "title": "The Barren Fig Tree", "branchId": "judgment", "refs": [{ "gospel": "Luke", "ref": "13:6-9" }], "summary": "A fig tree that bears no fruit is given one more year, with extra care, before it is cut down. Patience has a limit tied to fruitfulness." },
+    { "id": "persistent-widow", "title": "The Persistent Widow", "branchId": "judgment", "refs": [{ "gospel": "Luke", "ref": "18:1-8" }], "summary": "A widow wears down an unjust judge with her persistent pleas for justice until he grants her request. Jesus says God will bring justice to those who cry out to him." },
+    { "id": "good-shepherd", "title": "The Good Shepherd", "branchId": "johns-figures", "refs": [{ "gospel": "John", "ref": "10:1-18" }], "summary": "Jesus describes himself as the good shepherd who knows his sheep by name and lays down his life for them, unlike a hired hand who flees danger." },
+    { "id": "true-vine", "title": "The True Vine", "branchId": "johns-figures", "refs": [{ "gospel": "John", "ref": "15:1-17" }], "summary": "Jesus is the vine and his followers are the branches. A branch cannot bear fruit apart from the vine, and fruitless branches are cut away." },
+    { "id": "grain-of-wheat", "title": "The Grain of Wheat", "branchId": "johns-figures", "refs": [{ "gospel": "John", "ref": "12:24" }], "summary": "A grain of wheat stays a single seed unless it falls to the ground and dies; only then does it produce many seeds. Jesus speaks of his own coming death." },
+    { "id": "bread-of-life", "title": "The Bread of Life", "branchId": "johns-figures", "refs": [{ "gospel": "John", "ref": "6:35-51" }], "summary": "Jesus calls himself the bread of life come down from heaven, greater than the manna in the wilderness, given so that whoever eats it will not go hungry again." },
+    { "id": "woman-in-childbirth", "title": "The Woman in Childbirth", "branchId": "johns-figures", "refs": [{ "gospel": "John", "ref": "16:21" }], "summary": "A woman in labor has pain, but forgets it in her joy once the child is born. Jesus compares this to the disciples' coming grief turning to joy." },
+    { "id": "light-of-the-world", "title": "The Light of the World", "branchId": "johns-figures", "refs": [{ "gospel": "John", "ref": "8:12" }], "summary": "Jesus declares himself the light of the world; whoever follows him will not walk in darkness but will have the light of life." }
+  ]
+}
