@@ -5,6 +5,7 @@ import Modal from '../Modal';
 import CityInfo from '../CityInfo';
 import RevealPanelCanvas from '../RevealPanelCanvas';
 import Button from '../Button';
+import PageTitle from '../PageTitle';
 import './Map.css';
 import { getPointFor } from './eventPointMap';
 import type { JesusEventList } from '../../types';
@@ -120,6 +121,7 @@ const Map = () => {
 
   return (
     <div className="content">
+      <PageTitle title="Map" />
       <div className="map-container" ref={containerRef}>
         <RevealPanelCanvas>
           <div

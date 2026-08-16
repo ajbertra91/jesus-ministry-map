@@ -3,6 +3,7 @@ import { useGetParables } from '../../hooks/useGetParables';
 import type { Parable, ParableBranch } from '../../types';
 import Modal from '../Modal';
 import KingsHeader from '../KingsHeader';
+import PageTitle from '../PageTitle';
 import './ParablesPage.css';
 
 type NodeLayout = { x: number; y: number };
@@ -113,6 +114,7 @@ const ParablesPage = () => {
 
   return (
     <div className="parables-page">
+      <PageTitle title="Parables of the Kingdom" />
       <KingsHeader title={<h1 className="title orbitron-bold text-3xl text-cyan mb-4">Parables of the Kingdom</h1>} />
       <p className="orbitron-regular text-white intro">
         {(data?.parables ?? []).length} parables across Matthew, Mark, Luke, and John, wired into {branches.length} branches. Select a branch, then a node, to read the source.

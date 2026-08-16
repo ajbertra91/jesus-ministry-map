@@ -10,6 +10,7 @@ import InfoSection from "../InfoSection";
 import { FaCrown } from "react-icons/fa";
 import { FaBookBible } from "react-icons/fa6";
 import BarCode from "../BarCode";
+import PageTitle from "../PageTitle";
 
 
 const Kings = () => {
@@ -43,6 +44,7 @@ const Kings = () => {
 
   return (
     <>
+      <PageTitle title="Kings of Israel" />
       <div className="kings-page">
         <KingsHeader title={<h1 className="title orbitron-bold text-3xl text-cyan mb-4">The Kings of Israel</h1>} />
         <section className="kings-grid-container">

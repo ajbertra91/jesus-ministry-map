@@ -6,6 +6,7 @@ import { useGetDaniel11 } from '../../hooks/useGetDaniel11';
 import KingsHeader from '../KingsHeader';
 import Button from '../Button';
 import InfoCard from '../InfoCard';
+import PageTitle from '../PageTitle';
 import './DanielPage.css';
 
 const DanielPage = () => {
@@ -42,6 +43,7 @@ const DanielPage = () => {
 
   return (
     <div className="daniel-page">
+      <PageTitle title="The 400 Silent Years" />
       <KingsHeader title={<h1 className="title orbitron-bold text-3xl text-cyan mb-4">The 400 Silent Years</h1>} />
       <p className="orbitron-regular text-white">Daniel 11 details in advance, what is typically called the 400 silent years between testiments.</p>
       <ul>
