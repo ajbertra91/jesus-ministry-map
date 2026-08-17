@@ -126,20 +126,42 @@
     overflow: visible;
   }
 
-  .constellation-edge {
+  /* ribbon cable: several thin parallel conductors bending together */
+  .constellation-strand-glow {
     fill: none;
-    stroke: rgba(var(--color-cyan), 0.9);
+    stroke: rgba(var(--color-cyan), 0.25);
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+    filter: blur(1.5px);
+  }
+
+  .constellation-strand {
+    fill: none;
+    stroke: rgba(var(--color-cyan), 0.85);
+    stroke-width: 1.1;
+    stroke-linecap: square;
+    stroke-linejoin: miter;
+  }
+
+  .constellation-tick {
+    stroke: rgba(var(--color-cyan), 0.7);
+    stroke-width: 1;
+    stroke-linecap: square;
+  }
+
+  .constellation-junction {
+    fill: rgba(var(--color-darkest-blue), 0.9);
+    stroke: rgba(var(--color-cyan), 0.6);
+    stroke-width: 1;
+  }
+
+  .constellation-via-pad {
+    fill: rgba(var(--color-darkest-blue), 0.95);
+    stroke: rgb(var(--color-cyan));
     stroke-width: 1.25;
   }
 
-  .constellation-edge-glow {
-    fill: none;
-    stroke: rgba(var(--color-cyan), 0.35);
-    stroke-width: 5;
-    filter: blur(2px);
-  }
-
-  .constellation-via {
+  .constellation-via-dot {
     fill: rgb(var(--color-cyan));
     filter: drop-shadow(0 0 3px rgba(var(--color-cyan), 0.9));
   }

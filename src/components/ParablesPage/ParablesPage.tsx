@@ -68,26 +68,83 @@ const monogram = (title: string) => {
   return letters.join('').toUpperCase();
 };
 
-const tracePath = (a: NodeLayout, b: NodeLayout) => {
-  const dx = b.x - a.x;
-  const dy = b.y - a.y;
-  const adx = Math.abs(dx);
-  const ady = Math.abs(dy);
+type Vec = { x: number; y: number };
 
-  if (adx === 0 || ady === 0) {
-    return `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
-  }
+type OrthoEdge = {
+  axisFirst: 'h' | 'v';
+  a: NodeLayout;
+  b: NodeLayout;
+  corner1: NodeLayout;
+  corner2: NodeLayout;
+};
 
-  const diag = Math.min(adx, ady);
-  const sx = Math.sign(dx);
-  const sy = Math.sign(dy);
-
+// Stepped (Z) right-angle route a->b with two bends instead of one, so
+// several strands can run parallel to it and still land on clean Manhattan
+// jogs, like a ribbon cable routed around a board. `bendFrac` slides where
+// the middle jog sits, so parallel bundles don't all kink in the same spot.
+const buildOrthoEdge = (a: NodeLayout, b: NodeLayout, bendFrac = 0.5): OrthoEdge => {
+  const adx = Math.abs(b.x - a.x);
+  const ady = Math.abs(b.y - a.y);
   if (adx >= ady) {
-    const cornerX = b.x - sx * diag;
-    return `M ${a.x} ${a.y} L ${cornerX} ${a.y} L ${b.x} ${b.y}`;
+    const midX = a.x + (b.x - a.x) * bendFrac;
+    return { axisFirst: 'h', a, b, corner1: { x: midX, y: a.y }, corner2: { x: midX, y: b.y } };
   }
-  const cornerY = b.y - sy * diag;
-  return `M ${a.x} ${a.y} L ${a.x} ${cornerY} L ${b.x} ${b.y}`;
+  const midY = a.y + (b.y - a.y) * bendFrac;
+  return { axisFirst: 'v', a, b, corner1: { x: a.x, y: midY }, corner2: { x: b.x, y: midY } };
+};
+
+const RIBBON_SPACING = 3;
+// Offsets for a 4-conductor bundle, symmetric about the centerline.
+const RIBBON_OFFSETS = [-1.5, -0.5, 0.5, 1.5].map((n) => n * RIBBON_SPACING);
+
+// One conductor of the bundle, shifted `offset` px perpendicular to the
+// route's centerline. Shifting the constant coordinate of each straight
+// run keeps every strand parallel and staggers the bends into a staircase.
+const ribbonStrandPath = (edge: OrthoEdge, offset: number) => {
+  const { axisFirst, a, b, corner1 } = edge;
+  if (axisFirst === 'h') {
+    const ay = a.y + offset;
+    const midX = corner1.x + offset;
+    const by = b.y + offset;
+    return `M ${a.x} ${ay} L ${midX} ${ay} L ${midX} ${by} L ${b.x} ${by}`;
+  }
+  const ax = a.x + offset;
+  const midY = corner1.y + offset;
+  const bx = b.x + offset;
+  return `M ${ax} ${a.y} L ${ax} ${midY} L ${bx} ${midY} L ${bx} ${b.y}`;
+};
+
+const strandEndpoint = (edge: OrthoEdge, offset: number, end: 'a' | 'b'): NodeLayout => {
+  if (edge.axisFirst === 'h') {
+    return end === 'a' ? { x: edge.a.x, y: edge.a.y + offset } : { x: edge.b.x, y: edge.b.y + offset };
+  }
+  return end === 'a' ? { x: edge.a.x + offset, y: edge.a.y } : { x: edge.b.x + offset, y: edge.b.y };
+};
+
+// Direction the strand departs `a` in, or arrives at `b` from — both ends
+// share the same axis since the route starts and ends on it either side
+// of the middle jog.
+const strandDir = (edge: OrthoEdge): Vec => {
+  const sx = Math.sign(edge.b.x - edge.a.x) || 1;
+  const sy = Math.sign(edge.b.y - edge.a.y) || 1;
+  return edge.axisFirst === 'h' ? { x: sx, y: 0 } : { x: 0, y: sy };
+};
+
+// Point along a strand, `dist` px out from the node along its own travel
+// direction, for hanging a pin-comb tick off of.
+const tickPoint = (edge: OrthoEdge, offset: number, end: 'a' | 'b', dist = 13): NodeLayout => {
+  const base = strandEndpoint(edge, offset, end);
+  const dir = strandDir(edge);
+  const sign = end === 'a' ? 1 : -1;
+  return { x: base.x + dir.x * dist * sign, y: base.y + dir.y * dist * sign };
+};
+
+// Short perpendicular stroke crossing a strand near its node, like a pin
+// header comb where the bundle breaks out to the connector.
+const pinTick = (point: NodeLayout, dir: Vec, len = 6) => {
+  const perpX = -dir.y * (len / 2);
+  const perpY = dir.x * (len / 2);
+  return `M ${point.x + perpX} ${point.y + perpY} L ${point.x - perpX} ${point.y - perpY}`;
 };
 
 const ParablesPage = () => {
@@ -141,20 +198,62 @@ const ParablesPage = () => {
         <div className="constellation-panel">
           <div className={`constellation accent-${BRANCH_ACCENT[activeBranch.id] ?? 'cyan'}`}>
             <svg className="constellation-lines" viewBox="0 0 480 300" preserveAspectRatio="xMidYMid meet">
-              {edges.map(([fromIdx, toIdx]) => (
-                <g key={`${fromIdx}-${toIdx}`}>
-                  <path
-                    className="constellation-edge-glow"
-                    d={tracePath(nodeLayout[fromIdx], nodeLayout[toIdx])}
-                  />
-                  <path
-                    className="constellation-edge"
-                    d={tracePath(nodeLayout[fromIdx], nodeLayout[toIdx])}
-                  />
-                </g>
-              ))}
+              {edges.map(([fromIdx, toIdx], edgeIdx) => {
+                const from = nodeLayout[fromIdx];
+                const to = nodeLayout[toIdx];
+                // Stagger where each bundle's middle jog sits so parallel
+                // runs don't all kink at the same column/row.
+                const bendFrac = 0.35 + (0.3 * ((fromIdx * 7 + toIdx * 13 + edgeIdx) % 5)) / 4;
+                const edge = buildOrthoEdge(from, to, bendFrac);
+                const dir = strandDir(edge);
+                return (
+                  <g key={`${fromIdx}-${toIdx}`} className="constellation-edge-group">
+                    {RIBBON_OFFSETS.map((offset) => (
+                      <path
+                        key={offset}
+                        className="constellation-strand-glow"
+                        d={ribbonStrandPath(edge, offset)}
+                      />
+                    ))}
+                    {RIBBON_OFFSETS.map((offset) => (
+                      <path key={offset} className="constellation-strand" d={ribbonStrandPath(edge, offset)} />
+                    ))}
+                    {RIBBON_OFFSETS.map((offset) => (
+                      <path
+                        key={`tick-a-${offset}`}
+                        className="constellation-tick"
+                        d={pinTick(tickPoint(edge, offset, 'a'), dir)}
+                      />
+                    ))}
+                    {RIBBON_OFFSETS.map((offset) => (
+                      <path
+                        key={`tick-b-${offset}`}
+                        className="constellation-tick"
+                        d={pinTick(tickPoint(edge, offset, 'b'), dir)}
+                      />
+                    ))}
+                    <rect
+                      className="constellation-junction"
+                      x={edge.corner1.x - 6}
+                      y={edge.corner1.y - 6}
+                      width={12}
+                      height={12}
+                    />
+                    <rect
+                      className="constellation-junction"
+                      x={edge.corner2.x - 6}
+                      y={edge.corner2.y - 6}
+                      width={12}
+                      height={12}
+                    />
+                  </g>
+                );
+              })}
               {nodeLayout.map((node, idx) => (
-                <circle key={idx} className="constellation-via" cx={node.x} cy={node.y} r={3.5} />
+                <g key={idx} className="constellation-via">
+                  <rect x={node.x - 5} y={node.y - 5} width={10} height={10} className="constellation-via-pad" />
+                  <circle cx={node.x} cy={node.y} r={2} className="constellation-via-dot" />
+                </g>
               ))}
             </svg>
 

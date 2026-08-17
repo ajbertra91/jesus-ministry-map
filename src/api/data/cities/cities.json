@@ -604,5 +604,61 @@
       "newTestament": {},
       "prophecies": {}
     }
+  },
+  "Mt-Hermon": {
+    "id": "mt-hermon",
+    "title": "Mount Hermon",
+    "description": "Mount Hermon is the tallest peak in the Anti-Lebanon range, rising to about 9,232 feet (2,814 m) and holding snow most of the year; its meltwater feeds the springs that form the headwaters of the Jordan River. Deuteronomy 3:9 records that the Sidonians called it Sirion and the Amorites called it Senir. Its Hebrew name comes from the root herem, meaning \"devoted\" or \"set apart,\" a word that can also carry the sense of a ban or a curse. From at least the Iron Age, the mountain was venerated as the seat of the god Baal (Baal-Hermon, Judges 3:3; 1 Chronicles 5:23), and by the 1st century the cult at its base had shifted to the Greek god Pan, whose shrine grew into the pagan center of Caesarea Philippi. The Second Temple book of 1 Enoch names Hermon's summit as the place where 200 rebellious \"Watchers\" descended and swore an oath to take human wives (1 Enoch 6:6), an episode tied to the \"sons of God\" of Genesis 6:1-4 and echoed in Jude 6 and 2 Peter 2:4. This background, in which Hermon marks a boundary between the human and divine realms near the giant-associated territory of Bashan, is part of why many scholars locate the Transfiguration on its slopes rather than Mount Tabor, given the event's narrative closeness to Caesarea Philippi in Matthew 17, Mark 9, and Luke 9.",
+    "population": "Uninhabited summit; no permanent population",
+    "founded": "",
+    "scriptureReferences": {
+      "oldTestament": {
+        "Deuteronomy": [
+          "3:8-9",
+          "4:48"
+        ],
+        "Joshua": [
+          "11:3",
+          "11:17",
+          "12:1",
+          "13:5"
+        ],
+        "Judges": [
+          "3:3"
+        ],
+        "1 Chronicles": [
+          "5:23"
+        ],
+        "Psalm": [
+          "133:3"
+        ],
+        "Song of Solomon": [
+          "4:8"
+        ]
+      },
+      "newTestament": {
+        "Matthew": [
+          "17:1-9"
+        ],
+        "Mark": [
+          "9:2-10"
+        ],
+        "Luke": [
+          "9:28-36"
+        ],
+        "2 Peter": [
+          "1:16-18",
+          "2:4"
+        ],
+        "Jude": [
+          "1:6"
+        ]
+      },
+      "prophecies": {
+        "commentary": [
+          "Old Testament and Second Temple tradition treat Hermon as a \"cosmic mountain,\" a high place where the divine and human worlds meet. Deuteronomy 32:8-9 and Psalm 82 describe the \"sons of God\" being allotted authority over the nations and then turning to corruption; 1 Enoch's Watchers narrative places the primeval rebellion of Genesis 6 on this same summit, and Baal-Hermon's pagan cult, later absorbed into the worship of Pan at nearby Caesarea Philippi, kept the mountain linked to hostile spiritual powers into the 1st century. Read against this backdrop, the Transfiguration gains weight: on heights tied to the ancient rebellion, near territory Jesus called the \"gates of Hades\" (Matthew 16:18), Peter, James, and John see him revealed in divine glory beside Moses and Elijah and hear the Father call him \"my beloved Son.\" Scholars who favor this setting, notably Michael Heiser in Reversing Hermon, read the scene as a deliberate reclamation: the Son of God returning in glory to the mountain associated with the divine rebellion, starting the reversal of what happened there."
+        ]
+      }
+    }
   }
 }
