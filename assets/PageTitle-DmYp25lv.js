@@ -1,0 +1,1 @@
+import{X as e,Y as t}from"./index-Dvb-sqVG.js";var n=e(t(),1),r=`Jesus Ministry Map`,i=({title:e})=>((0,n.useEffect)(()=>{let t=document.title;return document.title=`${e} | ${r}`,()=>{document.title=t}},[e]),null);export{i as t};
